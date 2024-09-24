@@ -1,25 +1,18 @@
-import { BreadcrumbsWithIcon } from "../components/Breadcrumbs";
-import { NavbarWithMegaMenu } from "../components/Navbar";
-import ScrollB from "../components/ScrollBox";
+import PreLoader from "../components/PreLoad";
+import { SidebarWithBurgerMenu } from "../components/Sidebar";
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#EAE6E3]">
-      <NavbarWithMegaMenu />
-      {/* Main content that grows to push the footer down */}
-      <div className="items-center justify-center flex-grow">
-        <BreadcrumbsWithIcon />
-        <h1>Hello World</h1>
+    <>
+      <PreLoader />
+      <div className="flex flex-col min-h-screen bg-[#EAE6E3]">
+        <SidebarWithBurgerMenu />
+        {/* Main content that grows to push the footer down */}
+        <div className="flex items-center justify-center my-auto text-center">
+          <h1 className="text-[4rem] poppins-bold"> Hello World </h1>
+        </div>
       </div>
-
-      {/* Footer */}
-      <footer className="flex items-center justify-center w-full h-24 bg-teal-500">
-        <p>Footer Content</p>
-      </footer>
-      <div>
-        <ScrollB />
-      </div>
-    </div>
+    </>
   );
 }
 
