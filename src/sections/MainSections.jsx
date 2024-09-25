@@ -1,10 +1,10 @@
 import { useState } from "react";
-import BannerIcon from "../assets/Banner.png";
+import BannerIcon from "../assets/Banner.svg";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-pink-50">
+    <header className="bg-white">
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between py-4">
           <div className="text-xl text-red-400 plus-jakarta-sans">Logo</div>
