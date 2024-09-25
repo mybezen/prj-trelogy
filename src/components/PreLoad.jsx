@@ -1,23 +1,19 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
 import { preLoaderAnim } from "../animations/animations";
 
-
 function PreLoader() {
-
-  useEffect (() => {
+  useEffect(() => {
     preLoaderAnim();
-
   }, []);
 
   return (
-    <div className="preloader h-[100vh] w-100% bg-black text-white fixed bottom-0 left-0 right-0 z-55 flex justify-center items-center overflow-hidden ">
-     <div className="texts-container flex items-center justify-between h-60px w-280px poppins-bold text-xl overflow-hidden text-white"> 
-     {/* Text Container */}
-        <span>Peintagons</span>   
-
-     </div>
+    <div className="preloader h-[100vh] w-100% bg-black text-white fixed bottom-0 left-0 right-0 z-55 flex justify-center items-center overflow-hidden z-50 ">
+      <div className="flex items-center justify-between overflow-hidden text-xl text-white texts-container h-60px w-280px poppins-bold">
+        {/* Text Container */}
+        <span>Peintagons</span>
+      </div>
     </div>
-  )
+  );
 }
 
-export default PreLoader
+export default PreLoader;
