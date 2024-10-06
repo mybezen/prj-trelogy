@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Lostar';
+  src: url('./fonts/Lostar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kenarose';
+  src: url('./fonts/Kenarose.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lostar {
+  font-family: 'Lostar', sans-serif;
+}
+
+.kenarose {
+  font-family: 'Kenarose', sans-serif;
+}
+
+.plus-jakarta-sans-bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
