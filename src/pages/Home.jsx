@@ -35,9 +35,11 @@ function Home() {
           <p className="text-lg kenarose">28 Oktober 1928</p>
         </div>
 
-        <div className="flex items-center justify-center px-6 py-3 mb-12 rounded-full">
+        <div className="relative">
+        <div className="flex items-center w-4/12 mx-auto justify-center px-6 py-3 mb-12 rounded-full">
           {/* <button className="flex items-center px-6 py-3 text-white bg-red-800 rounded-full"> */}
           <AccordionCustomIcon />
+        </div>
         </div>
       </div>
 
