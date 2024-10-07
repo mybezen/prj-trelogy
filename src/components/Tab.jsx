@@ -1,0 +1,109 @@
+import { useState } from "react";
+import SoegondoIcon from '../assets/TabsImages/soegondo.png';
+import JokoIcon from '../assets/TabsImages/Djoko.jpg';
+import YaminIcon from '../assets/TabsImages/Yamin.jpg';
+import AmirIcon from '../assets/TabsImages/Amir.jpg';
+
+const SumpahPemudaTabs = () => {
+  const [activeTab, setActiveTab] = useState("Soegondo .D"); 
+  const [fadeTransition, setFadeTransition] = useState(false); // State for animation
+
+  const tabs = [
+    {
+      name: "Soegondo .D", 
+      image: SoegondoIcon,
+      content: {
+        description:
+          "Tokoh penting dalam sejarah pergerakan nasional Indonesia. Ia dikenal sebagai ketua Kongres Pemuda I yang melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
+        birthDate: "Tempat, Tanggal Lahir: 22 Februari 1905, Tuban",
+        deathDate: "Wafat: April 1978, Yogyakarta",
+      },
+    },
+    {
+      name: "R. M. Joko .M",
+      image: JokoIcon,
+      content: {
+        description: "Description for R. M. Joko .M",
+        birthDate: "Birth Date",
+        deathDate: "Death Date",
+      },
+    },
+    {
+      name: "M. Yamin",
+      image: YaminIcon,
+      content: {
+        description: "Description for M. Yamin",
+        birthDate: "Birth Date",
+        deathDate: "Death Date",
+      },
+    },
+    {
+      name: "Amir .S",
+      image: AmirIcon,
+      content: {
+        description: "Description for Amir .S",
+        birthDate: "Birth Date",
+        deathDate: "Death Date",
+      },
+    },
+  ];
+
+  const activeTabData = tabs.find((tab) => tab.name === activeTab);
+
+  const handleTabClick = (tabName) => {
+    setFadeTransition(true);
+    setTimeout(() => {
+      setActiveTab(tabName);
+      setFadeTransition(false);
+    }, 300); // Transition duration
+  };
+
+  return (
+    <div className="max-w-lg mx-auto p-4">
+      {/* Tabs Navigation */}
+      <div className="flex justify-around mb-4">
+        {tabs.map((tab) => (
+          <button
+            key={tab.name}
+            onClick={() => handleTabClick(tab.name)}
+            className={`px-4 py-2 rounded ${
+              activeTab === tab.name ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"
+            }`}
+          >
+            {tab.name}
+          </button>
+        ))}
+      </div>
+
+      {/* Tab Content with Transition */}
+      {activeTabData ? (
+        <div
+          className={`flex border rounded-lg bg-gray-100 p-4 transition-opacity transform ${
+            fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+          } duration-300 ease-in-out`}
+        >
+          {/* Image on the Left */}
+          <div className="w-1/3">
+            <img
+              src={activeTabData.image}
+              alt={activeTabData.name}
+              className="w-full h-auto object-cover rounded-lg"
+            />
+          </div>
+
+          {/* Text on the Right */}
+          <div className="w-2/3 pl-4">
+            <h2 className="text-xl kenarose text-[#8E2820] mb-2">{activeTabData.name}</h2>
+            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-2">{activeTabData.content.description}</p>
+            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-1">{activeTabData.content.birthDate}</p>
+            <p className="text-[#8E2820] plus-jakarta-sans-bold">{activeTabData.content.deathDate}</p>
+          </div>
+        </div>
+      ) : (
+        <div className="text-red-500">No data found for the selected tab</div>
+      )}
+    </div>
+  );
+};
+
+export default SumpahPemudaTabs;
