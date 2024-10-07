@@ -1,12 +1,12 @@
-import HeaderBg from "../assets/Heading.svg";
-import { AccordionCustomIcon } from "../components/Accordion";
-import GarudaScene from "../components/Three";
+import HeaderBg from '../assets/Heading.svg';
+import { AccordionCustomIcon } from '../components/Accordion';
+import GarudaScene from '../components/Three';
 
 function Home() {
   return (
     <div className="flex flex-col min-h-screen text-white bg-red-800">
       <div
-        className="bg-center bg-no-repeat bg-cover h-532"
+        className="bg-center bg-no-repeat bg-cover h-[18rem]"
         style={{
           backgroundImage: `url(${HeaderBg})`, // Set the background image
         }}
@@ -34,18 +34,18 @@ function Home() {
           <p className="mb-2 text-xl kenarose">Lorem ipsum dolot sir amet</p>
           <p className="text-lg kenarose">28 Oktober 1928</p>
         </div>
-
-        <div className="relative">
-        <div className="flex items-center w-4/12 mx-auto justify-center px-6 py-3 mb-12 rounded-full">
-          {/* <button className="flex items-center px-6 py-3 text-white bg-red-800 rounded-full"> */}
-          <AccordionCustomIcon />
-        </div>
-        </div>
       </div>
 
       <section className="w-full p-6 text-red-800 bg-pink-100 shadow-md">
+        <div className="text-white -mt-[5rem]">
+          <div className="flex items-center mx-auto justify-center px-6 py-3 mb-12 rounded-full">
+            {/* <button className="flex items-center px-6 py-3 text-white bg-red-800 rounded-full"> */}
+            <AccordionCustomIcon />
+          </div>
+        </div>
+
         <div className="flex flex-col items-start justify-between mx-auto md:flex-row max-w-7xl">
-          <div className="mb-8 md:w-1/2 md:mb-0">
+          <div className="mb-8 md:w-1/2 md:mb-0 md:ml-20">
             <h2 className="mb-4 text-3xl font-bold plus-jakarta-sans-bold">
               Kenapa sih harus mengenal lebih dalam tentang Sumpah Pemuda ?
             </h2>
