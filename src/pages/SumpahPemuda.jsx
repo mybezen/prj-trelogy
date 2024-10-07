@@ -1,6 +1,7 @@
 import CenteredNavbar from "../components/Navbar";
 import SumpahPemudaTabs from "../components/Tab";
 import PembuatanSections from "../sections/PembuatanSections";
+import VoiceSections from "../sections/VoiceSections";
 
 
 function SumpahPemuda() {
@@ -30,7 +31,7 @@ function SumpahPemuda() {
   
       {/* Pengikrar Sumpah Pemuda Section */}
       <section className="mb-12 bg-[#F4D9D0]">
-        <div className="relative flex justify-center items-center rounded-3xl shadow-lg w-[54vw] h-[12vh] mx-auto bg-[#8E2820] kenarose text-5xl">
+        <div className="relative flex justify-center items-center rounded-3xl shadow-lg w-[48vw] h-[10vh] mx-auto bg-[#8E2820] kenarose text-4xl text-[#F4D9D0]">
           <span>Pengikrar Sumpah Pemuda</span>
         </div>
         <div>
@@ -42,6 +43,11 @@ function SumpahPemuda() {
       <section className="mb-0 py-8 text-white bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/assets/HeaderBG.png')" }}>
         <PembuatanSections />
+      </section>
+
+        {/* Isi Sumpah Pemuda Section */}
+      <section>
+        <VoiceSections/>
       </section>
     </main>
   </div>

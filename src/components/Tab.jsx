@@ -5,12 +5,12 @@ import YaminIcon from '../assets/TabsImages/Yamin.jpg';
 import AmirIcon from '../assets/TabsImages/Amir.jpg';
 
 const SumpahPemudaTabs = () => {
-  const [activeTab, setActiveTab] = useState("Soegondo .D"); 
+  const [activeTab, setActiveTab] = useState("Soegondo .D");
   const [fadeTransition, setFadeTransition] = useState(false); // State for animation
 
   const tabs = [
     {
-      name: "Soegondo .D", 
+      name: "Soegondo .D",
       image: SoegondoIcon,
       content: {
         description:
@@ -23,8 +23,8 @@ const SumpahPemudaTabs = () => {
       name: "R. M. Joko .M",
       image: JokoIcon,
       content: {
-        description: "Description for R. M. Joko .M",
-        birthDate: "Birth Date",
+        description: "Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.",
+        birthDate: "Tempat tanggal lahir : Malang, 29 Mei 1903",
         deathDate: "Death Date",
       },
     },
@@ -32,7 +32,7 @@ const SumpahPemudaTabs = () => {
       name: "M. Yamin",
       image: YaminIcon,
       content: {
-        description: "Description for M. Yamin",
+        description: "Sastrawan, politisi, dan pencetus ide Pancasila, berperan penting dalam kemerdekaan Indonesia",
         birthDate: "Birth Date",
         deathDate: "Death Date",
       },
@@ -41,7 +41,7 @@ const SumpahPemudaTabs = () => {
       name: "Amir .S",
       image: AmirIcon,
       content: {
-        description: "Description for Amir .S",
+        description: "Mantan Perdana Menteri Indonesia, pemimpin politik sayap kiri, dan pejuang kemerdekaan.",
         birthDate: "Birth Date",
         deathDate: "Death Date",
       },
@@ -61,35 +61,37 @@ const SumpahPemudaTabs = () => {
   return (
     <div className="max-w-lg mx-auto p-4">
       {/* Tabs Navigation */}
-      <div className="flex justify-around mb-4">
+
+      <div className="bg-[#8E2820] rounded-full p-4 mb-4 flex justify-around space-x-4 w-max mx-auto">
         {tabs.map((tab) => (
           <button
             key={tab.name}
             onClick={() => handleTabClick(tab.name)}
-            className={`px-4 py-2 rounded ${
-              activeTab === tab.name ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"
-            }`}
+            className={`px-4 py-2 rounded-full kenarose ${activeTab === tab.name ? "bg-[#C9A194] text-[#8E2820]" : "bg-[#F4D9D0] text-[#8E2820]"
+              }`}
           >
             {tab.name}
           </button>
         ))}
       </div>
 
+
+
       {/* Tab Content with Transition */}
       {activeTabData ? (
         <div
-          className={`flex border rounded-lg bg-gray-100 p-4 transition-opacity transform ${
-            fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
-          } duration-300 ease-in-out`}
+          className={`flex border rounded-lg bg-gray-100 p-4 transition-opacity transform ${fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+            } duration-300 ease-in-out`}
         >
           {/* Image on the Left */}
-          <div className="w-1/3">
+          <div className="w-1/3 flex justify-center items-center">
             <img
               src={activeTabData.image}
               alt={activeTabData.name}
               className="w-full h-auto object-cover rounded-lg"
             />
           </div>
+
 
           {/* Text on the Right */}
           <div className="w-2/3 pl-4">

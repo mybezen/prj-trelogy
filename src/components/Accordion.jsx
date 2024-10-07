@@ -34,18 +34,18 @@ export function AccordionCustomIcon() {
   return (
     <>
       <div
-        className={`bg-red-800 px-10 pt-1 pb-3 rounded-3xl duration-300 transition-[width] ${
+        className={`bg-red-800 px-[91px] py-[25px] rounded-3xl duration-300 drop-shadow-2xl transition-[width] ${
           open === 1 ? 'w-8/12' : 'w-5/12'
         }`}
       >
         <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
           <AccordionHeader
             onClick={() => handleOpen(1)}
-            className="border-b-0 flex justify-center text-2xl"
+            className="border-b-0 flex justify-center text-2xl poppins-bold"
           >
-            Apa itu sumpah pemuda?
+            Apa Itu Sumpah Pemuda?
           </AccordionHeader>
-          <AccordionBody className="text-white text-lg">
+          <AccordionBody className="text-white text-lg plus-jakarta-sans-semibold">
             Sumpah Pemuda adalah keputusan Kongres Pemuda Kedua yang
             diselenggarakan dua hari, 27—28 Oktober 1928 di Batavia (kini
             bernama Jakarta). Keputusan ini menegaskan cita-cita akan "tanah air
