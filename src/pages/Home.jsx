@@ -56,7 +56,7 @@ function Home() {
             <Link to="/ikrar">
               <button
                 onClick="/ikrar"
-                className="px-6 py-3 poppins-bold text-white hover:bg-[#da5237] duration-200 bg-[#993623] rounded-full"
+                className="px-6 py-3 poppins-bold text-white hover:bg-[#da5237] duration-300 bg-[#993623] rounded-full"
               >
                 Baca Selengkapnya
               </button>
@@ -69,7 +69,7 @@ function Home() {
       </section>
       <section className="h-[12rem] bg-[#f2f2f2] w-screen"></section>
 
-      <section className="flex items-center justify-center mx-auto">
+      <section className="flex items-center justify-center mx-auto pt-5">
         <ImageSection />
       </section>
 

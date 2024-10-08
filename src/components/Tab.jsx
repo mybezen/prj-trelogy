@@ -26,7 +26,7 @@ const SumpahPemudaTabs = () => {
         description:
           "Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.",
         birthDate: "Tempat tanggal lahir : Malang, 29 Mei 1903",
-        deathDate: "Death Date",
+        deathDate: "29 Mei 1969",
       },
     },
     {
@@ -84,31 +84,28 @@ const SumpahPemudaTabs = () => {
       {/* Tab Content with Transition */}
       {activeTabData ? (
         <div
-          className={`flex border rounded-lg p-4 transition-opacity transform border-none bg-gray-400 ${
+          className={`flex border rounded-lg p-4 transition-opacity transform border-none my-10 ${
             fadeTransition ? "opacity-0 scale-95" : "opacity-100 scale-100"
           } duration-300 ease-in-out`}
         >
           {/* Image on the Left */}
-          <div className="w-1/3 h-1/5 flex justify-center overflow-hidden items-center bg-fuchsia-200">
-            <img
-              src={activeTabData.image}
-              alt={activeTabData.name}
-              className="h-full object-contain relative rounded-full"
-            />
-          </div>
+          <div
+            className="w-1/3 h-[18rem] rounded-lg flex justify-center overflow-hidden items-center bg-cover bg-center"
+            style={{ backgroundImage: `url(${activeTabData.image})` }}
+          ></div>
 
           {/* Text on the Right */}
           <div className="w-2/3 pl-4">
-            <h2 className="text-xl kenarose text-[#8E2820] mb-2">
+            <h2 className="text-4xl kenarose text-[#8E2820] mb-2">
               {activeTabData.name}
             </h2>
-            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-2">
+            <p className="text-xl text-[#8E2820] font-sans mb-5">
               {activeTabData.content.description}
             </p>
-            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-1">
+            <p className="text-xl text-[#8E2820] font-sans mb-1">
               {activeTabData.content.birthDate}
             </p>
-            <p className="text-[#8E2820] plus-jakarta-sans-bold">
+            <p className="text-xl text-[#8E2820] font-sans">
               {activeTabData.content.deathDate}
             </p>
           </div>

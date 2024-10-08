@@ -19,7 +19,7 @@ function SumpahPemuda() {
       <main className="py-8 mx-auto">
         {/* Rumusan Kongres Section */}
         <section className="mb-8 px-6 lg:px-12 py-8 rounded-lg w-full bg-cover bg-center bg-no-repeat">
-          <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
+          <h1 className="kenarose mb-6 text-3xl lg:text-5xl font-extrabold text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
             Rumusan Kongres
           </h1>
 
@@ -38,7 +38,7 @@ function SumpahPemuda() {
 
         {/* Pengikrar Sumpah Pemuda Section */}
         <section className="bg-[#F4D9D0]">
-          <div className="-top-[2.5rem] relative flex justify-center items-center rounded-3xl shadow-lg w-[48vw] h-[10vh] mx-auto bg-[#8E2820] kenarose text-4xl text-[#F4D9D0]">
+          <div className="relative flex justify-center items-center rounded-3xl shadow-lg w-[48vw] h-[10vh] mx-auto bg-[#8E2820] kenarose text-4xl text-[#F4D9D0]">
             <span>Pengikrar Sumpah Pemuda</span>
           </div>
           <div>
@@ -55,7 +55,7 @@ function SumpahPemuda() {
         </section>
 
         {/* Isi Sumpah Pemuda Section */}
-        <section className="bg-[#F4D9D0]">
+        <section>
           <VoiceSections />
         </section>
       </main>
