@@ -4,11 +4,10 @@ import AudioFile from '../assets/audio/sumpah_pemuda.mp3'; // File audio yang ak
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
-
 const VoiceSections = () => {
   const audioRef = useRef(null); // Referensi untuk audio player
   const [isPlaying, setIsPlaying] = useState(false); // State untuk status play/pause
-  const [audioDuration, setAudioDuration] = useState("0:00"); // State untuk durasi audio
+  const [audioDuration, setAudioDuration] = useState('0:00'); // State untuk durasi audio
 
   // Fungsi untuk handle play dan pause
   const togglePlay = () => {
@@ -26,16 +25,22 @@ const VoiceSections = () => {
   const handleLoadedMetadata = () => {
     const duration = audioRef.current.duration;
     const minutes = Math.floor(duration / 60);
-    const seconds = Math.floor(duration % 60).toString().padStart(2, "0");
+    const seconds = Math.floor(duration % 60)
+      .toString()
+      .padStart(2, '0');
     setAudioDuration(`${minutes}:${seconds}`);
   };
 
   return (
-    <section className="flex justify-center items-center py-12 space-x-12">
+    <section className="flex md:flex-row flex-col justify-center items-center py-12 space-x-12">
       {/* Vinyl dan Audio Player */}
       <div className="flex flex-col items-center">
         {/* Vinyl Image with rotation animation */}
-        <div className={`-mb-[4rem] w-64 h-64 ${isPlaying ? "animate-spin-slow" : ""}`}>
+        <div
+          className={`-mb-[4rem] w-64 h-64 ${
+            isPlaying ? 'animate-spin-slow' : ''
+          }`}
+        >
           <img
             src={VinylImage}
             alt="Vinyl"
@@ -44,12 +49,16 @@ const VoiceSections = () => {
         </div>
 
         {/* Audio Controls */}
-        <div className="z-20 bg-gradient-to-b from-[#130D2C] to-[#271A5E] text-white rounded-lg p-4 w-[24vw] flex flex-col items-center">
-          <p className="poppins-bold text-lg mb-2">Sumpah Pemuda</p>
-          <p className="text-sm poppins-bold">Prof. Mohammad Yamin</p>
+        <div className="z-20 bg-gradient-to-b from-[#130D2C] to-[#271A5E] text-white rounded-lg p-4 md:w-[24vw] w-[18rem] flex flex-col items-center">
+          <p className="poppins-bold md:text-lg text-xl md:mb-2 mb-0.5">
+            Sumpah Pemuda
+          </p>
+          <p className="md:text-sm text-base poppins-bold">
+            Prof. Mohammad Yamin
+          </p>
 
           {/* Controls */}
-          <div className="flex justify-center items-center mt-4 space-x-4">
+          <div className="flex justify-center items-center md:mt-4 mt-2 space-x-4">
             <button
               onClick={togglePlay}
               className="w-10 h-10 bg-transparent text-white flex items-center justify-center"
@@ -59,21 +68,36 @@ const VoiceSections = () => {
               ) : (
                 <FontAwesomeIcon icon={faPlay} />
               )}
-
             </button>
-            <audio ref={audioRef} src={AudioFile} onLoadedMetadata={handleLoadedMetadata} />
-            <span className="text-sm">{audioDuration}</span> {/* Durasi audio */}
+            <audio
+              ref={audioRef}
+              src={AudioFile}
+              onLoadedMetadata={handleLoadedMetadata}
+            />
+            <span className="md:text-sm text-base">{audioDuration}</span>{' '}
+            {/* Durasi audio */}
           </div>
         </div>
       </div>
 
       {/* Isi Sumpah Pemuda */}
-      <div className="">
-        <h2 className="text-[#8E2820] kenarose text-3xl mb-6">Isi Sumpah Pemuda</h2>
+      <div className="md:mt-0 mt-10">
+        <h2 className="text-[#8E2820] kenarose text-3xl mb-6">
+          Isi Sumpah Pemuda
+        </h2>
         <ol className="list-decimal list-inside plus-jakarta-sans-bold text-[#8E2820] text-lg space-y-4">
-          <li>Kami poetra dan poetri Indonesia, mengakoe bertoempah darah jang satoe, tanah air Indonesia.</li>
-          <li>Kami poetra dan poetri Indonesia mengakoe berbangsa jang satoe, bangsa Indonesia.</li>
-          <li>Kami poetra dan poetri Indonesia mendjoendjoeng bahasa persatoean, bahasa Indonesia.</li>
+          <li>
+            Kami poetra dan poetri Indonesia, mengakoe bertoempah darah jang
+            satoe, tanah air Indonesia.
+          </li>
+          <li>
+            Kami poetra dan poetri Indonesia mengakoe berbangsa jang satoe,
+            bangsa Indonesia.
+          </li>
+          <li>
+            Kami poetra dan poetri Indonesia mendjoendjoeng bahasa persatoean,
+            bahasa Indonesia.
+          </li>
         </ol>
       </div>
     </section>
