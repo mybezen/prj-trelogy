@@ -3,6 +3,7 @@ import HeaderBg from '../assets/Heading.svg';
 import { AccordionCustomIcon } from '../components/Accordion';
 import PreLoader from '../components/PreLoad';
 import GarudaScene from '../components/Three';
+import CenteredNavbar from '../components/Navbar';
 
 function Home() {
   return (
@@ -15,40 +16,11 @@ function Home() {
         }}
       >
         {/* Your content here */}
-        <header className="flex justify-center p-4">
-          <nav className="flex items-center max-w-md px-6 py-2 space-x-6 bg-white rounded-full bg-opacity-20 plus-jakarta-sans-bold">
-            <a href="#" className="hover:text-gray-200">
-              Home
-            </a>
-            <a href="#" className="hover:text-gray-200">
-              About
-            </a>
-            <a href="#" className="hover:text-gray-200">
-              Blog
-            </a>
-            <a href="#" className="hover:text-gray-200">
-              Contact
-            </a>
-            <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-          </nav>
-        </header>
+        <CenteredNavbar />
 
         <div className="px-4 mb-12 text-center">
-          <h1 className="mb-4 text-5xl font-bold lostar">SUMPAH PEMUDA</h1>
-          <p className="mb-2 text-xl kenarose">Peintagons</p>
+          <h1 className="mb-4 text-7xl lostar">SUMPAH PEMUDA</h1>
+          <p className="mb-2 text-xl kenarose">Jejak Pemuda</p>
           <p className="text-lg kenarose">28 Oktober 1928</p>
         </div>
       </div>

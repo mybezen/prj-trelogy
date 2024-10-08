@@ -1,6 +1,9 @@
 import { useState, useRef } from 'react';
 import VinylImage from '../assets/VinylImage.png'; // Gambar vinyl yang diunggah
 import AudioFile from '../assets/audio/sumpah_pemuda.mp3'; // File audio yang akan diimport
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
+
 
 const VoiceSections = () => {
   const audioRef = useRef(null); // Referensi untuk audio player
@@ -30,9 +33,9 @@ const VoiceSections = () => {
   return (
     <section className="flex justify-center items-center py-12 space-x-12">
       {/* Vinyl dan Audio Player */}
-      <div className="flex flex-col items-center space-y-4">
+      <div className="flex flex-col items-center">
         {/* Vinyl Image with rotation animation */}
-        <div className={`w-48 h-48 ${isPlaying ? "animate-spin-slow" : ""}`}>
+        <div className={`-mb-[4rem] w-64 h-64 ${isPlaying ? "animate-spin-slow" : ""}`}>
           <img
             src={VinylImage}
             alt="Vinyl"
@@ -41,21 +44,22 @@ const VoiceSections = () => {
         </div>
 
         {/* Audio Controls */}
-        <div className="bg-[#382757] text-white rounded-lg p-4 w-64 flex flex-col items-center">
-          <p className="font-semibold text-lg mb-2">Sumpah Pemuda</p>
-          <p className="text-sm">Prof. Mohammad Yamin</p>
+        <div className="z-20 bg-gradient-to-b from-[#130D2C] to-[#271A5E] text-white rounded-lg p-4 w-[24vw] flex flex-col items-center">
+          <p className="poppins-bold text-lg mb-2">Sumpah Pemuda</p>
+          <p className="text-sm poppins-bold">Prof. Mohammad Yamin</p>
 
           {/* Controls */}
           <div className="flex justify-center items-center mt-4 space-x-4">
             <button
               onClick={togglePlay}
-              className="w-10 h-10 bg-[#382757] text-white flex items-center justify-center border border-white rounded-full"
+              className="w-10 h-10 bg-transparent text-white flex items-center justify-center"
             >
               {isPlaying ? (
-                <span>&#10074;&#10074;</span> // Pause icon ( || )
+                <FontAwesomeIcon icon={faPause} />
               ) : (
-                <span>&#9654;</span> // Play icon ( ► )
+                <FontAwesomeIcon icon={faPlay} />
               )}
+
             </button>
             <audio ref={audioRef} src={AudioFile} onLoadedMetadata={handleLoadedMetadata} />
             <span className="text-sm">{audioDuration}</span> {/* Durasi audio */}
@@ -64,9 +68,9 @@ const VoiceSections = () => {
       </div>
 
       {/* Isi Sumpah Pemuda */}
-      <div className="text-left">
+      <div className="">
         <h2 className="text-[#8E2820] kenarose text-3xl mb-6">Isi Sumpah Pemuda</h2>
-        <ol className="list-decimal list-inside plus-jakarta-sans text-[#8E2820] text-lg space-y-4">
+        <ol className="list-decimal list-inside plus-jakarta-sans-bold text-[#8E2820] text-lg space-y-4">
           <li>Kami poetra dan poetri Indonesia, mengakoe bertoempah darah jang satoe, tanah air Indonesia.</li>
           <li>Kami poetra dan poetri Indonesia mengakoe berbangsa jang satoe, bangsa Indonesia.</li>
           <li>Kami poetra dan poetri Indonesia mendjoendjoeng bahasa persatoean, bahasa Indonesia.</li>

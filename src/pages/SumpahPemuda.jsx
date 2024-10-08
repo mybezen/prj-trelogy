@@ -37,8 +37,8 @@ function SumpahPemuda() {
         </section>
 
         {/* Pengikrar Sumpah Pemuda Section */}
-        <section className="mb-12 bg-[#F4D9D0]">
-          <div className="relative flex justify-center items-center rounded-3xl shadow-lg w-[48vw] h-[10vh] mx-auto bg-[#8E2820] kenarose text-4xl text-[#F4D9D0]">
+        <section className="bg-[#F4D9D0]">
+          <div className="-top-[2.5rem] relative flex justify-center items-center rounded-3xl shadow-lg w-[48vw] h-[10vh] mx-auto bg-[#8E2820] kenarose text-4xl text-[#F4D9D0]">
             <span>Pengikrar Sumpah Pemuda</span>
           </div>
           <div>
@@ -55,7 +55,7 @@ function SumpahPemuda() {
         </section>
 
         {/* Isi Sumpah Pemuda Section */}
-        <section>
+        <section className='bg-[#F4D9D0]'>
           <VoiceSections />
         </section>
       </main>

@@ -80,7 +80,7 @@ const SumpahPemudaTabs = () => {
       {/* Tab Content with Transition */}
       {activeTabData ? (
         <div
-          className={`flex border rounded-lg bg-gray-100 p-4 transition-opacity transform ${fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+          className={`flex border rounded-lg p-4 transition-opacity transform ${fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
             } duration-300 ease-in-out`}
         >
           {/* Image on the Left */}
