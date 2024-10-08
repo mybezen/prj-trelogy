@@ -1,17 +1,16 @@
-
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Default carousel stylesimport "./carouselCustom.css"; // Custom styles
-import SlideIcon1 from '../assets/BuildingImages/IC.png';
-import SlideIcon2 from '../assets/BuildingImages/OJB.png';
-import SlideIcon3 from '../assets/BuildingImages/JJB.jpg';
+import SlideIcon1 from "../assets/BuildingImages/IC.png";
+import SlideIcon2 from "../assets/BuildingImages/OJB.png";
+import SlideIcon3 from "../assets/BuildingImages/JJB.jpg";
 
 function ImageSection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+    <div className="flex items-center">
       {/* Left column with fixed width and height */}
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col">
         {/* Top left image with fixed size and cover */}
-        <div className="bg-gray-200 w-[300px] h-[200px] overflow-hidden rounded-lg">
+        <div className="bg-gray-200 w-[300px] h-[200px] overflow-hidden rounded-lg ml-2 mb-2">
           <img
             src={SlideIcon1} // Replace with your image
             alt="Lorong Zaman"
@@ -21,7 +20,7 @@ function ImageSection() {
         </div>
 
         {/* Bottom left image with fixed size and cover */}
-        <div className="bg-gray-200 w-[300px] h-[200px] overflow-hidden rounded-lg">
+        <div className="bg-gray-200 w-[300px] h-[200px] overflow-hidden rounded-lg ml-2">
           <img
             src={SlideIcon2} // Replace with your image
             alt="Kolom"
@@ -32,7 +31,7 @@ function ImageSection() {
       </div>
 
       {/* Right column - Carousel with fixed width and height */}
-      <div className="md:col-span-2 bg-gray-200 w-[600px] h-[400px] overflow-hidden rounded-lg">
+      <div className="bg-gray-200 w-[37.5rem] h-[25.625rem] overflow-hidden rounded-lg m-2">
         <Carousel
           showThumbs={false}
           infiniteLoop

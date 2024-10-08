@@ -1,8 +1,8 @@
 import { useState } from "react";
-import SoegondoIcon from '../assets/TabsImages/soegondo.png';
-import JokoIcon from '../assets/TabsImages/Djoko.jpg';
-import YaminIcon from '../assets/TabsImages/Yamin.jpg';
-import AmirIcon from '../assets/TabsImages/Amir.jpg';
+import SoegondoIcon from "../assets/TabsImages/soegondo.png";
+import JokoIcon from "../assets/TabsImages/Djoko.jpg";
+import YaminIcon from "../assets/TabsImages/Yamin.jpg";
+import AmirIcon from "../assets/TabsImages/Amir.jpg";
 
 const SumpahPemudaTabs = () => {
   const [activeTab, setActiveTab] = useState("Soegondo .D");
@@ -23,7 +23,8 @@ const SumpahPemudaTabs = () => {
       name: "R. M. Joko .M",
       image: JokoIcon,
       content: {
-        description: "Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.",
+        description:
+          "Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.",
         birthDate: "Tempat tanggal lahir : Malang, 29 Mei 1903",
         deathDate: "Death Date",
       },
@@ -32,7 +33,8 @@ const SumpahPemudaTabs = () => {
       name: "M. Yamin",
       image: YaminIcon,
       content: {
-        description: "Sastrawan, politisi, dan pencetus ide Pancasila, berperan penting dalam kemerdekaan Indonesia",
+        description:
+          "Sastrawan, politisi, dan pencetus ide Pancasila, berperan penting dalam kemerdekaan Indonesia",
         birthDate: "Birth Date",
         deathDate: "Death Date",
       },
@@ -41,7 +43,8 @@ const SumpahPemudaTabs = () => {
       name: "Amir .S",
       image: AmirIcon,
       content: {
-        description: "Mantan Perdana Menteri Indonesia, pemimpin politik sayap kiri, dan pejuang kemerdekaan.",
+        description:
+          "Mantan Perdana Menteri Indonesia, pemimpin politik sayap kiri, dan pejuang kemerdekaan.",
         birthDate: "Birth Date",
         deathDate: "Death Date",
       },
@@ -59,7 +62,7 @@ const SumpahPemudaTabs = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4">
+    <div className="w-5/12 mx-auto p-4">
       {/* Tabs Navigation */}
 
       <div className="bg-[#8E2820] rounded-full p-4 mb-4 flex justify-around space-x-4 w-max mx-auto">
@@ -67,38 +70,47 @@ const SumpahPemudaTabs = () => {
           <button
             key={tab.name}
             onClick={() => handleTabClick(tab.name)}
-            className={`px-4 py-2 rounded-full kenarose ${activeTab === tab.name ? "bg-[#C9A194] text-[#8E2820]" : "bg-[#F4D9D0] text-[#8E2820]"
-              }`}
+            className={`px-4 py-2 rounded-full kenarose ${
+              activeTab === tab.name
+                ? "bg-[#C9A194] text-[#8E2820]"
+                : "bg-[#F4D9D0] text-[#8E2820]"
+            }`}
           >
             {tab.name}
           </button>
         ))}
       </div>
 
-
-
       {/* Tab Content with Transition */}
       {activeTabData ? (
         <div
-          className={`flex border rounded-lg p-4 transition-opacity transform ${fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
-            } duration-300 ease-in-out`}
+          className={`flex border rounded-lg p-4 transition-opacity transform border-none bg-gray-400 ${
+            fadeTransition ? "opacity-0 scale-95" : "opacity-100 scale-100"
+          } duration-300 ease-in-out`}
         >
           {/* Image on the Left */}
-          <div className="w-1/3 flex justify-center items-center">
+          <div className="w-1/3 h-1/5 flex justify-center overflow-hidden items-center bg-fuchsia-200">
             <img
               src={activeTabData.image}
               alt={activeTabData.name}
-              className="w-full h-auto object-cover rounded-lg"
+              className="h-full object-contain relative rounded-full"
             />
           </div>
 
-
           {/* Text on the Right */}
           <div className="w-2/3 pl-4">
-            <h2 className="text-xl kenarose text-[#8E2820] mb-2">{activeTabData.name}</h2>
-            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-2">{activeTabData.content.description}</p>
-            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-1">{activeTabData.content.birthDate}</p>
-            <p className="text-[#8E2820] plus-jakarta-sans-bold">{activeTabData.content.deathDate}</p>
+            <h2 className="text-xl kenarose text-[#8E2820] mb-2">
+              {activeTabData.name}
+            </h2>
+            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-2">
+              {activeTabData.content.description}
+            </p>
+            <p className="text-[#8E2820] plus-jakarta-sans-bold mb-1">
+              {activeTabData.content.birthDate}
+            </p>
+            <p className="text-[#8E2820] plus-jakarta-sans-bold">
+              {activeTabData.content.deathDate}
+            </p>
           </div>
         </div>
       ) : (
