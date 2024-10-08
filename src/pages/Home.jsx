@@ -4,6 +4,8 @@ import { AccordionCustomIcon } from '../components/Accordion';
 import PreLoader from '../components/PreLoad';
 import GarudaScene from '../components/Three';
 import CenteredNavbar from '../components/Navbar';
+import { FooterWithSitemap } from '../components/Footer';
+import ImageSection from '../sections/NewsSections';
 
 function Home() {
   return (
@@ -19,8 +21,8 @@ function Home() {
         <CenteredNavbar />
 
         <div className="px-4 mb-12 text-center">
-          <h1 className="mb-4 text-7xl lostar">SUMPAH PEMUDA</h1>
-          <p className="mb-2 text-xl kenarose">Jejak Pemuda</p>
+          <h1 className="mb-4 text-7xl lostar bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">SUMPAH PEMUDA</h1>
+          <p className="mb-2 text-xl kenarose bg-gradient-to-r from-[#FFF3D0] to-[#FFFFFF] bg-clip-text text-transparent">Jejak Pemuda</p>
           <p className="text-lg kenarose">28 Oktober 1928</p>
         </div>
       </div>
@@ -58,8 +60,15 @@ function Home() {
           </div>
         </div>
       </section>
+      <section className='h-[12rem] bg-[#f2f2f2] w-screen'>
 
-      <footer className="p-4 mt-8 text-center bg-red-800">INI FOOTER</footer>
+      </section>
+      
+      <section className='flex items-center justify-center mx-auto'>
+        <ImageSection />
+      </section>
+
+      <FooterWithSitemap />
     </div>
   );
 }

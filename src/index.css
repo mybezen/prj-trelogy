@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles for carousel dots */
+.carousel .control-dots .dot {
+  background: #888; /* Custom dot color */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #000; /* Custom color for the selected dot */
+  opacity: 1;
+}
+
+/* Custom previous/next button styles */
+.carousel .control-next.control-arrow,
+.carousel .control-prev.control-arrow {
+  background-color: rgba(0, 0, 0, 0.5); /* Background for buttons */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.carousel .control-next.control-arrow:hover,
+.carousel .control-prev.control-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Hover state */
+}
+
+.carousel .control-next.control-arrow {
+  right: 15px;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 15px;
+}
+
+
 @keyframes spin-slow {
   from {
     transform: rotate(0deg);

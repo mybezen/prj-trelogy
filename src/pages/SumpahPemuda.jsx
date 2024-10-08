@@ -19,7 +19,7 @@ function SumpahPemuda() {
       <main className="py-8 mx-auto">
         {/* Rumusan Kongres Section */}
         <section className="mb-8 px-6 lg:px-12 py-8 rounded-lg w-full bg-cover bg-center bg-no-repeat">
-          <h1 className="kenarose mb-6 text-3xl lg:text-5xl font-extrabold text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
+          <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
             Rumusan Kongres
           </h1>
 
