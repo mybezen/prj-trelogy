@@ -1,8 +1,8 @@
-import CenteredNavbar from "../components/Navbar";
-import SumpahPemudaTabs from "../components/Tab";
-import PembuatanSections from "../sections/PembuatanSections";
-import VoiceSections from "../sections/VoiceSections";
-import HeaderBg from "../assets/Heading.svg";
+import CenteredNavbar from '../components/Navbar';
+import SumpahPemudaTabs from '../components/Tab';
+import PembuatanSections from '../sections/PembuatanSections';
+import VoiceSections from '../sections/VoiceSections';
+import HeaderBg from '../assets/Heading.svg';
 
 function SumpahPemuda() {
   return (

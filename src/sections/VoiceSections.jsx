@@ -85,7 +85,7 @@ const VoiceSections = () => {
         <h2 className="text-[#8E2820] kenarose text-3xl mb-6">
           Isi Sumpah Pemuda
         </h2>
-        <ol className="list-decimal list-inside plus-jakarta-sans-bold text-[#8E2820] text-lg space-y-4">
+        <ol className="list-decimal list-inside md:mr-0 mr-10 plus-jakarta-sans-bold text-[#8E2820] text-lg space-y-4">
           <li>
             Kami poetra dan poetri Indonesia, mengakoe bertoempah darah jang
             satoe, tanah air Indonesia.
