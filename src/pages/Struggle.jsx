@@ -1,4 +1,5 @@
 import HeaderBg from "../assets/Heading.svg"; // Import background image for second section
+import { FooterWithSocialLinks } from "../components/Footer";
 import CenteredNavbar from "../components/Navbar";
 
 function StrugglePages() {
@@ -68,6 +69,9 @@ function StrugglePages() {
       </section>
 
       <section className="h-[700px]"></section>
+      <div>
+        <FooterWithSocialLinks/>
+      </div>
     </div>
   );
 }

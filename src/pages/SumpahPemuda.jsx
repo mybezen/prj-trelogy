@@ -3,6 +3,7 @@ import SumpahPemudaTabs from '../components/Tab';
 import PembuatanSections from '../sections/PembuatanSections';
 import VoiceSections from '../sections/VoiceSections';
 import HeaderBg from '../assets/Heading.svg';
+import { FooterWithSocialLinks } from '../components/Footer';
 
 function SumpahPemuda() {
   return (
@@ -58,6 +59,9 @@ function SumpahPemuda() {
           <VoiceSections />
         </section>
       </main>
+      <div>
+        <FooterWithSocialLinks/>
+      </div>
     </div>
   );
 }

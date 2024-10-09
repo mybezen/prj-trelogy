@@ -1,5 +1,6 @@
 import { CarouselCustomArrows } from '../components/CardCarousel';
 import TogetherIcon from '../assets/TogethIcon.svg';
+import { FooterWithSocialLinks } from '../components/Footer';
 
 function ContactPage() {
   return (
@@ -28,6 +29,9 @@ function ContactPage() {
       </h1>
       <div className="relative z-10 flex justify-center w-full pt-[7rem] h-screen -mt-24">
         <CarouselCustomArrows />
+      </div>
+      <div>
+        <FooterWithSocialLinks/>
       </div>
     </div>
   );
