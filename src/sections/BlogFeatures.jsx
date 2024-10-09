@@ -1,5 +1,10 @@
+/* eslint-disable no-irregular-whitespace */
 import FeaturesIcon1 from "../assets/BlogImages/Features1.png";
 import FeaturesIcon2 from "../assets/BlogImages/Features2.jpg";
+import FeaturesIcon3 from "../assets/BlogImages/Features3.jpg";
+import FeaturesIcon4 from "../assets/BlogImages/Features4.jpg";
+import FeaturesIcon5 from "../assets/BlogImages/Features5.jpg";
+import FeaturesIcon6 from "../assets/BlogImages/Features6.jpg";
 
 function BlogFeatures() {
   return (
@@ -25,21 +30,16 @@ function BlogFeatures() {
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic ">
-                Pemerintah mengekspresikan keprihatinan terhadap hampir punahnya
-                bahasa daerah di beberapa daerah, mendorong Kementerian
-                Pendidikan dan Kebudayaan (Kemendikbud) mengajak pemerintah
-                daerah untuk meningkatkan upaya pelestarian bahasa daerah sesuai
-                Amanat Undang-Undang Nomor 24 tahun 2009.
+                Sumpah Pemuda di tahun 1928, yang mempersatukan pemuda Indonesia
+                dalam perjuangan kemerdekaan, dapat dimaknai di era milenial.
+                Dalam era digital saat ini, semangat tersebut dapat diwujudkan
+                melalui tindakan sehari-hari seperti menjaga kerukunan,
+                mendukung produk lokal, menyebarkan pesan-pesan positif, dan
+                menggunakan bahasa Indonesia yang baik dan benar.
               </p>
               <p className="mb-4">
-                Peran pemerintah daerah dalam pelestarian bahasa daerah diatur
-                dalam Pasal 42, Ayat 1, yang mewajibkan pengembangan, pembinaan,
-                dan perlindungan bahasa dan sastra daerah untuk tetap menjadi
-                bagian dari kekayaan budaya Indonesia. Sinergi antara Pemerintah
-                Pusat dan Daerah juga diamanatkan dalam Pasal 42, Ayat 2, untuk
-                melibatkan Pemerintah Daerah secara bertahap, sistematis, dan
-                berkelanjutan dalam upaya Pengembangan, Pembinaan, dan
-                Perlindungan Bahasa Daerah di bawah koordinasi Lembaga Bahasa.
+                Namun, generasi muda saat ini cenderung kurang peduli dengan
+                makna sebenarnya dari Sumpah Pemuda​
               </p>
             </div>
             <p className="text-gray-500">
@@ -62,24 +62,22 @@ function BlogFeatures() {
           </div>
           <div className="md:w-7/12">
             <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
-              <a href="https://news.detik.com/berita/d-4143200/ini-yang-mau-dilakukan-pemerintah-agar-budaya-asli-tak-luntur">
+              <a href="https://www.cnnindonesia.com/nasional/20201028123614-20-563667/sumpah-pemuda-di-mata-warga-ingat-tanggal-lupa-makna ">
                 Sumpah Pemuda di Mata Warga: Ingat Tanggal, Lupa Makna
               </a>
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic">
-                Direktur Jenderal Kebudayaan Kementrian Pendidikan dan
-                Kebudayaan, Hilmar Farid mengatakan pemajuan kebudayaan tersebut
-                tidak hanya dengan upaya pelestarian kebudayaan, tapi juga bisa
-                dengan memberdayakan sumber daya manusianya. Salah satunya lewat
-                mengajarkan kesenian-kesenian asli Indonesia di sekolah.
+                Banyak warga Indonesia, terutama generasi muda, lebih ingat
+                tanggal peringatan Sumpah Pemuda daripada makna sebenarnya.
+                Meskipun banyak yang tahu tentang peristiwa bersejarah ini,
+                nilai-nilai seperti persatuan, semangat juang, dan nasionalisme
+                seringkali tidak dipahami dengan mendalam.
               </p>
               <p className="mb-4">
-                Kementerian Koordinasi Pembangunan Manusia dan Kebudayaan
-                bersama pejabat pemerintah daerah, saat ini tengah gencar dalam
-                upaya pemajuan kebudayaan Indonesia. Kebudayaan Indonesia
-                dinilai semakin hilang arah, yang terlihat dari semakin
-                lunturnya nilai-nilai karakter bangsa.
+                Pentingnya memahami dan menerapkan nilai-nilai Sumpah Pemuda
+                dalam kehidupan sehari-hari, terutama dalam menghadapi tantangan
+                seperti perpecahan sosial dan lemahnya identitas nasional​
               </p>
             </div>
             <p className="text-gray-500">
@@ -87,41 +85,35 @@ function BlogFeatures() {
             </p>
           </div>
         </div>
-        {/* Features Item 1 */}
+        {/* Features Item 3 */}
         <div
           className="flex flex-col items-center gap-6 mb-12 md:flex-row"
           data-aos="fade-up"
         >
           <div className="md:w-5/12 drop-shadow-xl">
             <img
-              src={FeaturesIcon1}
+              src={FeaturesIcon3}
               className="rounded-lg img-fluid"
               alt="Memaknai Sumpah Pemuda di Era Milenial"
             />
           </div>
           <div className="md:w-7/12">
             <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
-              <a href="https://bkd.jogjaprov.go.id/informasi-publik/berita/memaknai-sumpah-pemuda-di-era-milenial">
-                Memaknai Sumpah Pemuda di Era Milenial
+              <a href="https://www.merdeka.com/dunia/fakta-unik-bahasa-indonesia-623-mvk.html?page=7">
+                Fakta Unik Bahasa Indonesia
               </a>
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic ">
-                Pemerintah mengekspresikan keprihatinan terhadap hampir punahnya
-                bahasa daerah di beberapa daerah, mendorong Kementerian
-                Pendidikan dan Kebudayaan (Kemendikbud) mengajak pemerintah
-                daerah untuk meningkatkan upaya pelestarian bahasa daerah sesuai
-                Amanat Undang-Undang Nomor 24 tahun 2009.
+                Fakta menarik mengenai bahasa Indonesia, seperti keberadaannya
+                sebagai salah satu bahasa yang diajarkan di lebih dari 45 negara
+                di dunia.
               </p>
               <p className="mb-4">
-                Peran pemerintah daerah dalam pelestarian bahasa daerah diatur
-                dalam Pasal 42, Ayat 1, yang mewajibkan pengembangan, pembinaan,
-                dan perlindungan bahasa dan sastra daerah untuk tetap menjadi
-                bagian dari kekayaan budaya Indonesia. Sinergi antara Pemerintah
-                Pusat dan Daerah juga diamanatkan dalam Pasal 42, Ayat 2, untuk
-                melibatkan Pemerintah Daerah secara bertahap, sistematis, dan
-                berkelanjutan dalam upaya Pengembangan, Pembinaan, dan
-                Perlindungan Bahasa Daerah di bawah koordinasi Lembaga Bahasa.
+                Dinamika perkembangan bahasa Indonesia yang menyerap kata-kata
+                dari bahasa asing. Hal ini menunjukkan bahwa bahasa Indonesia
+                sangat adaptif terhadap perubahan global tanpa kehilangan
+                identitas aslinya
               </p>
             </div>
             <p className="text-gray-500">
@@ -130,14 +122,14 @@ function BlogFeatures() {
           </div>
         </div>
 
-        {/* Features Item 2 */}
+        {/* Features Item 4 */}
         <div
           className="flex flex-col items-center gap-6 mb-12 md:flex-row-reverse"
           data-aos="fade-up"
         >
           <div className="md:w-5/12 drop-shadow-xl">
             <img
-              src={FeaturesIcon2}
+              src={FeaturesIcon4}
               className="rounded-lg img-fluid"
               alt="Pemajuan kebudayaan"
             />
@@ -145,23 +137,80 @@ function BlogFeatures() {
           <div className="md:w-7/12">
             <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
               <a href="https://news.detik.com/berita/d-4143200/ini-yang-mau-dilakukan-pemerintah-agar-budaya-asli-tak-luntur">
-                Sumpah Pemuda di Mata Warga: Ingat Tanggal, Lupa Makna
+                Arti Sumpah Pemuda Bagi Peserta Didik Hambatan Intelektual
               </a>
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic">
-                Direktur Jenderal Kebudayaan Kementrian Pendidikan dan
-                Kebudayaan, Hilmar Farid mengatakan pemajuan kebudayaan tersebut
-                tidak hanya dengan upaya pelestarian kebudayaan, tapi juga bisa
-                dengan memberdayakan sumber daya manusianya. Salah satunya lewat
-                mengajarkan kesenian-kesenian asli Indonesia di sekolah.
+              Pentingnya Sumpah Pemuda bagi peserta didik dengan hambatan intelektual, menekankan bahwa meskipun mereka memiliki keterbatasan, semangat kebangsaan dan cinta tanah air bisa tetap diajarkan.
               </p>
               <p className="mb-4">
-                Kementerian Koordinasi Pembangunan Manusia dan Kebudayaan
-                bersama pejabat pemerintah daerah, saat ini tengah gencar dalam
-                upaya pemajuan kebudayaan Indonesia. Kebudayaan Indonesia
-                dinilai semakin hilang arah, yang terlihat dari semakin
-                lunturnya nilai-nilai karakter bangsa.
+              Dengan pendidikan yang inklusif, nilai-nilai yang terkandung dalam Sumpah Pemuda tetap bisa diserap oleh semua peserta didik, membantu mereka untuk lebih menghargai peran mereka sebagai bagian dari bangsa Indonesia
+              </p>
+            </div>
+            <p className="text-gray-500">
+              Dilansir dari news.detik.com pada Selasa, (31/07/2018)
+            </p>
+          </div>
+        </div>
+        {/* Features Item 5 */}
+        <div
+          className="flex flex-col items-center gap-6 mb-12 md:flex-row"
+          data-aos="fade-up"
+        >
+          <div className="md:w-5/12 drop-shadow-xl">
+            <img
+              src={FeaturesIcon5}
+              className="rounded-lg img-fluid"
+              alt="Memaknai Sumpah Pemuda di Era Milenial"
+            />
+          </div>
+          <div className="md:w-7/12">
+            <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
+              <a href="https://www.merdeka.com/dunia/fakta-unik-bahasa-indonesia-623-mvk.html?page=7">
+                Menghadapi Degradasi Moral Remaja Indonesia: Tantangan dan
+                Solusi
+              </a>
+            </h3>
+            <div className="border-l-4 border-[#8E2820] pl-3">
+              <p className="mb-4 italic ">
+              Tantangan yang dihadapi oleh remaja Indonesia di tengah kemerosotan moral akibat pengaruh globalisasi dan perubahan sosial. Penulis menekankan pentingnya pendidikan karakter dan nilai-nilai kebangsaan sebagai solusi untuk menghadapi degradasi moral ini.
+              </p>
+              <p className="mb-4">
+              Solusi yang ditawarkan meliputi peran keluarga, sekolah, dan masyarakat dalam menanamkan nilai-nilai luhur kepada generasi muda​
+              </p>
+            </div>
+            <p className="text-gray-500">
+              Dilansir dari kemdikbud.go.id pada Selasa, (21/02/2017)
+            </p>
+          </div>
+        </div>
+
+        {/* Features Item 6 */}
+        <div
+          className="flex flex-col items-center gap-6 mb-12 md:flex-row-reverse"
+          data-aos="fade-up"
+        >
+          <div className="md:w-5/12 drop-shadow-xl">
+            <img
+              src={FeaturesIcon6}
+              className="rounded-lg img-fluid"
+              alt="Pemajuan kebudayaan"
+            />
+          </div>
+          <div className="md:w-7/12">
+            <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
+              <a href="https://news.detik.com/berita/d-4143200/ini-yang-mau-dilakukan-pemerintah-agar-budaya-asli-tak-luntur">
+                Korupsi: Ancaman Tersembunyi yang Merusak Sendi-sendi Kehidupan
+                Bangsa dan Negara
+              </a>
+            </h3>
+            <div className="border-l-4 border-[#8E2820] pl-3">
+              <p className="mb-4 italic">
+              Dampak korupsi yang merusak sendi-sendi kehidupan bangsa dan negara. Korupsi dianggap sebagai ancaman besar yang dapat melemahkan fondasi negara, menghancurkan moralitas masyarakat, serta menghambat pembangunan dan kesejahteraan.
+              </p>
+              <p className="mb-4">
+              Pemerintah diharapkan dapat lebih tegas dalam menangani kasus korupsi dengan menegakkan hukum secara adil, guna membangun Indonesia yang bersih dan bebas dari korupsi​
               </p>
             </div>
             <p className="text-gray-500">
