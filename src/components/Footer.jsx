@@ -2,7 +2,6 @@ import { Typography } from '@material-tailwind/react';
 
 //Icon
 
-
 const LINKS = [
   {
     title: 'Daftar Konten',
@@ -22,8 +21,7 @@ const currentYear = new Date().getFullYear();
 
 export function FooterWithSocialLinks() {
   return (
-    <footer className="relative w-full lg:-mt-[410px] -mt-[150px]">
-
+    <footer className="w-full">
       <div className="w-full max-w-full px-8 pt-12">
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
           <Typography variant="h5" className="mb-6 poppins-semibold-italic">
