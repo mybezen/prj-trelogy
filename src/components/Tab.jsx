@@ -58,19 +58,17 @@ const SumpahPemudaTabs = () => {
     setTimeout(() => {
       setActiveTab(tabName);
       setFadeTransition(false);
-    }, 300); // Transition duration
+    }, 300);
   };
 
   return (
-    <div className="w-7/12 mx-auto p-4">
-      {/* Tabs Navigation */}
-
-      <div className="bg-[#8E2820] rounded-full p-4 mb-4 flex justify-around space-x-4 w-max mx-auto">
+    <div className="w-full md:w-8/12 mx-auto p-4">
+      <div className="bg-[#8E2820] rounded-lg md:rounded-3xl p-2 md:p-4 mb-4 flex justify-center gap-2 md:gap-4 w-full md:w-max mx-auto">
         {tabs.map((tab) => (
           <button
             key={tab.name}
             onClick={() => handleTabClick(tab.name)}
-            className={`px-4 py-2 rounded-full kenarose ${
+            className={`px-3 py-1.5 text-[15px] md:text-base md:px-4 md:py-2 md:rounded-2xl flex-1 kenarose ${
               activeTab === tab.name
                 ? 'bg-[#C9A194] text-[#8E2820]'
                 : 'bg-[#F4D9D0] text-[#8E2820]'
@@ -83,26 +81,26 @@ const SumpahPemudaTabs = () => {
 
       {activeTabData ? (
         <div
-          className={`flex border rounded-lg p-4 transition-opacity transform border-none my-10 ${
+          className={`flex flex-col md:flex-row border rounded-lg p-4 transition-opacity transform border-none my-10 ${
             fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
           } duration-300 ease-in-out`}
         >
           <div
-            className="w-1/3 h-[18rem] rounded-lg flex justify-center overflow-hidden items-center bg-cover bg-center"
+            className="w-full md:w-1/3 h-[18rem] md:h-[18rem] rounded-lg flex justify-center overflow-hidden items-center bg-cover bg-center mb-4 md:mb-0"
             style={{ backgroundImage: `url(${activeTabData.image})` }}
           ></div>
 
-          <div className="w-2/3 pl-4">
-            <h2 className="text-4xl kenarose text-[#8E2820] mb-2">
+          <div className="w-full md:w-2/3 md:pl-4 font-medium">
+            <h2 className="text-2xl md:text-4xl kenarose text-[#8E2820] mb-2">
               {activeTabData.name}
             </h2>
-            <p className="text-xl text-[#8E2820] font-sans mb-5">
+            <p className="text-base md:text-xl text-[#8E2820] font-sans mb-5 border-l-4 border-[#8E2820] pl-3">
               {activeTabData.content.description}
             </p>
-            <p className="text-xl text-[#8E2820] font-sans mb-1">
+            <p className="text-base md:text-xl text-[#8E2820] font-sans mb-1">
               {activeTabData.content.birthDate}
             </p>
-            <p className="text-xl text-[#8E2820] font-sans">
+            <p className="text-base md:text-xl text-[#8E2820] font-sans">
               {activeTabData.content.deathDate}
             </p>
           </div>
