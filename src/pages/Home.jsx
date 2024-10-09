@@ -4,8 +4,9 @@ import { AccordionCustomIcon } from "../components/Accordion";
 import PreLoader from "../components/PreLoad";
 import GarudaScene from "../components/Three";
 import CenteredNavbar from "../components/Navbar";
-import { FooterWithSitemap } from "../components/Footer";
+import { FooterWithSocialLinks } from "../components/Footer";
 import ImageSection from "../sections/NewsSections";
+import CapabSections from "../sections/CapabSections";
 
 function Home() {
   return (
@@ -65,13 +66,15 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="h-[12rem] bg-[#f2f2f2] w-screen"></section>
+      <section className="h-[12rem] bg-[#f2f2f2] w-screen">
+        <CapabSections />
+      </section>
 
       <section className="flex items-center justify-center pt-5 mx-auto">
         <ImageSection />
       </section>
 
-      <FooterWithSitemap />
+      <FooterWithSocialLinks />
     </div>
   );
 }
