@@ -60,7 +60,7 @@ function Home() {
               </button>
             </Link>
           </div>
-          <div className="md:w-1/2 md:pl-8">
+          <div className="md:w-1/2 w-full md:pl-8 m-auto">
             <GarudaScene />
           </div>
         </div>
