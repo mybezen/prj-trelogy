@@ -11,7 +11,7 @@ function CenteredNavbar() {
         <a href="/strug" className="hover:text-gray-200">
           Blog
         </a>
-        <a href="#" className="hover:text-gray-200">
+        <a href="/blog" className="hover:text-gray-200">
           Kontak
         </a>
         <a href="/">

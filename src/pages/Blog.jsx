@@ -1,4 +1,5 @@
 import CenteredNavbar from "../components/Navbar";
+import BlogFeatures from "../sections/BlogFeatures";
 
 function BlogPage() {
   return (
@@ -7,7 +8,9 @@ function BlogPage() {
         <CenteredNavbar />
       </header>
       {/* Section Features */}
-      <div></div>
+      <div>
+        <BlogFeatures />
+      </div>
     </div>
   );
 }
