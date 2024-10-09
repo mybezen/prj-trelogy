@@ -7,6 +7,7 @@ import SumpahPemuda from "./pages/SumpahPemuda";
 import StrugglePages from "./pages/Struggle";
 import BlogPage from "./pages/Blog";
 import { useEffect } from "react"; // You need useEffect to initialize AOS on component mount
+import ContactPage from "./pages/Contact";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,8 @@ function App() {
         <Route path="/ikrar" element={<SumpahPemuda />} />
         <Route path="/strug" element={<StrugglePages />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path='/kontak' element={<ContactPage/>}/>
+        
       </Routes>
     </BrowserRouter>
   );

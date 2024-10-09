@@ -9,7 +9,7 @@ import FeaturesIcon6 from "../assets/BlogImages/Features6.jpg";
 function BlogFeatures() {
   return (
     <section id="features" className="py-12 features">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-[4vw]">
         {/* Features Item 1 */}
         <div
           className="flex flex-col items-center gap-6 mb-12 md:flex-row"
