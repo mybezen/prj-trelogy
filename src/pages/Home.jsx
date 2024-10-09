@@ -70,9 +70,9 @@ function Home() {
               peran bahasa Indonesia sebagai pemersatu, menginspirasi semangat
               kebangsaan hingga kini.
             </p>
-            <Link to="/ikrar">
+            <Link to="/strug">
               <button
-                onClick="/ikrar"
+                onClick="/strug"
                 className="px-6 py-3 poppins-bold text-white hover:bg-[#da5237] duration-300 bg-[#993623] rounded-full"
               >
                 Baca Selengkapnya

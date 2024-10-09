@@ -1,4 +1,4 @@
-/* eslint-disable no-irregular-whitespace */
+
 import FeaturesIcon1 from "../assets/BlogImages/Features1.png";
 import FeaturesIcon2 from "../assets/BlogImages/Features2.jpg";
 import FeaturesIcon3 from "../assets/BlogImages/Features3.jpg";
@@ -39,11 +39,11 @@ function BlogFeatures() {
               </p>
               <p className="mb-4">
                 Namun, generasi muda saat ini cenderung kurang peduli dengan
-                makna sebenarnya dari Sumpah Pemuda​
+                makna sebenarnya dari Sumpah Pemuda
               </p>
             </div>
             <p className="text-gray-500">
-              Dilansir dari kemdikbud.go.id pada Selasa, (21/02/2017)
+              Dilansir dari BKD Yogyakarta pada 28 Oktober 2022
             </p>
           </div>
         </div>
@@ -77,11 +77,11 @@ function BlogFeatures() {
               <p className="mb-4">
                 Pentingnya memahami dan menerapkan nilai-nilai Sumpah Pemuda
                 dalam kehidupan sehari-hari, terutama dalam menghadapi tantangan
-                seperti perpecahan sosial dan lemahnya identitas nasional​
+                seperti perpecahan sosial dan lemahnya identitas nasional
               </p>
             </div>
             <p className="text-gray-500">
-              Dilansir dari news.detik.com pada Selasa, (31/07/2018)
+              Dilansir dari cnnindonesia pada Rabu, 28 Oktober 2020
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ function BlogFeatures() {
               </p>
             </div>
             <p className="text-gray-500">
-              Dilansir dari kemdikbud.go.id pada Selasa, (21/02/2017)
+              Dilansir dari merdeka.com pada Minggu, 18 Jun 2023
             </p>
           </div>
         </div>
@@ -136,20 +136,20 @@ function BlogFeatures() {
           </div>
           <div className="md:w-7/12">
             <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
-              <a href="https://news.detik.com/berita/d-4143200/ini-yang-mau-dilakukan-pemerintah-agar-budaya-asli-tak-luntur">
+              <a href="https://slbcdwpare.sch.id/berita/detail/2611">
                 Arti Sumpah Pemuda Bagi Peserta Didik Hambatan Intelektual
               </a>
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic">
-              Pentingnya Sumpah Pemuda bagi peserta didik dengan hambatan intelektual, menekankan bahwa meskipun mereka memiliki keterbatasan, semangat kebangsaan dan cinta tanah air bisa tetap diajarkan.
+                Pentingnya Sumpah Pemuda bagi peserta didik dengan hambatan intelektual, menekankan bahwa meskipun mereka memiliki keterbatasan, semangat kebangsaan dan cinta tanah air bisa tetap diajarkan.
               </p>
               <p className="mb-4">
-              Dengan pendidikan yang inklusif, nilai-nilai yang terkandung dalam Sumpah Pemuda tetap bisa diserap oleh semua peserta didik, membantu mereka untuk lebih menghargai peran mereka sebagai bagian dari bangsa Indonesia
+                Dengan pendidikan yang inklusif, nilai-nilai yang terkandung dalam Sumpah Pemuda tetap bisa diserap oleh semua peserta didik, membantu mereka untuk lebih menghargai peran mereka sebagai bagian dari bangsa Indonesia
               </p>
             </div>
             <p className="text-gray-500">
-              Dilansir dari news.detik.com pada Selasa, (31/07/2018)
+              Dilansir dari SLB-C DHARMA pada 29 Oktober 2023
             </p>
           </div>
         </div>
@@ -167,21 +167,21 @@ function BlogFeatures() {
           </div>
           <div className="md:w-7/12">
             <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
-              <a href="https://www.merdeka.com/dunia/fakta-unik-bahasa-indonesia-623-mvk.html?page=7">
+              <a href="https://www.kompasiana.com/bennymurdani9781/65a0fe4812d50f6dcb558222/menghadapi-degradasi-moral-remaja-indonesia-tantangan-dan-solusi">
                 Menghadapi Degradasi Moral Remaja Indonesia: Tantangan dan
                 Solusi
               </a>
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic ">
-              Tantangan yang dihadapi oleh remaja Indonesia di tengah kemerosotan moral akibat pengaruh globalisasi dan perubahan sosial. Penulis menekankan pentingnya pendidikan karakter dan nilai-nilai kebangsaan sebagai solusi untuk menghadapi degradasi moral ini.
+                Tantangan yang dihadapi oleh remaja Indonesia di tengah kemerosotan moral akibat pengaruh globalisasi dan perubahan sosial. Penulis menekankan pentingnya pendidikan karakter dan nilai-nilai kebangsaan sebagai solusi untuk menghadapi degradasi moral ini.
               </p>
               <p className="mb-4">
-              Solusi yang ditawarkan meliputi peran keluarga, sekolah, dan masyarakat dalam menanamkan nilai-nilai luhur kepada generasi muda​
+                Solusi yang ditawarkan meliputi peran keluarga, sekolah, dan masyarakat dalam menanamkan nilai-nilai luhur kepada generasi muda
               </p>
             </div>
             <p className="text-gray-500">
-              Dilansir dari kemdikbud.go.id pada Selasa, (21/02/2017)
+              Dilansir dari kompasiana pada 12 Januari 2024
             </p>
           </div>
         </div>
@@ -200,21 +200,22 @@ function BlogFeatures() {
           </div>
           <div className="md:w-7/12">
             <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
-              <a href="https://news.detik.com/berita/d-4143200/ini-yang-mau-dilakukan-pemerintah-agar-budaya-asli-tak-luntur">
+              <a href="
+https://www.djkn.kemenkeu.go.id/artikel/baca/16690/Korupsi-Ancaman-Tersembunyi-yang-Merusak-Sendi-sendi-Kehidupan-Bangsa-dan-Negara.html">
                 Korupsi: Ancaman Tersembunyi yang Merusak Sendi-sendi Kehidupan
                 Bangsa dan Negara
               </a>
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic">
-              Dampak korupsi yang merusak sendi-sendi kehidupan bangsa dan negara. Korupsi dianggap sebagai ancaman besar yang dapat melemahkan fondasi negara, menghancurkan moralitas masyarakat, serta menghambat pembangunan dan kesejahteraan.
+                Dampak korupsi yang merusak sendi-sendi kehidupan bangsa dan negara. Korupsi dianggap sebagai ancaman besar yang dapat melemahkan fondasi negara, menghancurkan moralitas masyarakat, serta menghambat pembangunan dan kesejahteraan.
               </p>
               <p className="mb-4">
-              Pemerintah diharapkan dapat lebih tegas dalam menangani kasus korupsi dengan menegakkan hukum secara adil, guna membangun Indonesia yang bersih dan bebas dari korupsi​
+                Pemerintah diharapkan dapat lebih tegas dalam menangani kasus korupsi dengan menegakkan hukum secara adil, guna membangun Indonesia yang bersih dan bebas dari korupsi
               </p>
             </div>
             <p className="text-gray-500">
-              Dilansir dari news.detik.com pada Selasa, (31/07/2018)
+              Dilansir dari kemenkeu pada Jumat, 15 Desember 2023
             </p>
           </div>
         </div>

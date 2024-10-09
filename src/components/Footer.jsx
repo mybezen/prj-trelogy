@@ -5,7 +5,7 @@ import { Typography } from '@material-tailwind/react';
 const LINKS = [
   {
     title: 'Daftar Konten',
-    items: ['Overview', 'About Us', 'Penyakit', 'Data'],
+    items: ['Beranda', 'Perjuangan Singkat', 'Ikrar', 'Blog', 'Tim Kami'],
   },
   {
     title: 'Member',
@@ -13,7 +13,7 @@ const LINKS = [
   },
   {
     title: 'Credit',
-    items: ['Freepik', 'Bgjar '],
+    items: ['@Peintagons',],
   },
 ];
 
@@ -21,11 +21,11 @@ const currentYear = new Date().getFullYear();
 
 export function FooterWithSocialLinks() {
   return (
-    <footer className="w-full">
+    <footer className="w-full bg-slate-300">
       <div className="w-full max-w-full px-8 pt-12">
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6 poppins-semibold-italic">
-            VitalMotion
+          <Typography variant="h5" className="mb-6 kenarose italic text-3xl text-black">
+            Peintagons
           </Typography>
           <div className="grid justify-between grid-cols-3 gap-4">
             {LINKS.map(({ title, items }) => (
@@ -61,7 +61,7 @@ export function FooterWithSocialLinks() {
             >
               <svg
                 className="w-5 h-5"
-                fill="currentColor"
+                fill="black"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
@@ -79,7 +79,7 @@ export function FooterWithSocialLinks() {
             >
               <svg
                 className="w-5 h-5"
-                fill="currentColor"
+                fill="black"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
@@ -92,10 +92,10 @@ export function FooterWithSocialLinks() {
             </Typography>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-black-50 md:flex-row md:justify-between">
+        <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-black md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className="mb-4 text-center poppins-regular text-black-900 md:mb-0"
+            className="mb-4 text-center poppins-regular text-black md:mb-0"
           >
             &copy; {currentYear}{' '}
             <a href="https://material-tailwind.com/">Peintagons</a>. All Rights
