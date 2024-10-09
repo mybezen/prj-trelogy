@@ -9,7 +9,7 @@ import ImageSection from "../sections/NewsSections";
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen text-white bg-red-800">
+    <div className="flex flex-col min-h-screen overflow-hidden text-white bg-red-800">
       <PreLoader />
       <div
         className="bg-center bg-no-repeat bg-cover md:h-[18rem] h-[23rem]"
@@ -30,7 +30,7 @@ function Home() {
         </div>
       </div>
 
-      <section className="w-full p-6 text-red-800 bg-[#F4D9D0] shadow-md">
+      <section className="w-full p-6 text-red-800 bg-white shadow-md">
         <div className="text-white -mt-[5rem]">
           <div className="flex items-center justify-center py-3 mx-auto mb-12 rounded-full md:px-6">
             <AccordionCustomIcon />
@@ -42,7 +42,7 @@ function Home() {
             <h2 className="mb-4 text-5xl kenarose text-[#663A31]">
               Kenapa sih harus{" "}
               <span className="text-[#993623]">
-                mengenal lebih dalam tentang Sumpah Pemuda ?
+                mengenal lebih dalam tentang Sumpah Pemuda?
               </span>
             </h2>
             <p className="mb-6 text-black plus-jakarta-sans-semibold">
