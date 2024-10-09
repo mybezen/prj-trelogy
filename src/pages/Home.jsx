@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import HeaderBg from "../assets/Heading.svg";
 import { AccordionCustomIcon } from "../components/Accordion";
@@ -7,11 +8,28 @@ import CenteredNavbar from "../components/Navbar";
 import { FooterWithSocialLinks } from "../components/Footer";
 import ImageSection from "../sections/NewsSections";
 import CapabSections from "../sections/CapabSections";
+import BackgroundAudio from '../assets/audio/background.mp3';
 
 function Home() {
+  // Reference to the audio element
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    // Play the audio when the component is mounted
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen overflow-hidden text-white bg-red-800">
       <PreLoader />
+
+      {/* Audio Element */}
+      <audio ref={audioRef} src={BackgroundAudio} loop autoPlay>
+        Your browser does not support the audio element.
+      </audio>
+
       <div
         className="bg-center bg-no-repeat bg-cover md:h-[18rem] h-[23rem]"
         style={{
