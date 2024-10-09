@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import HeaderBg from "../assets/Heading.svg";
-import { AccordionCustomIcon } from "../components/Accordion";
-import PreLoader from "../components/PreLoad";
-import GarudaScene from "../components/Three";
-import CenteredNavbar from "../components/Navbar";
-import { FooterWithSitemap } from "../components/Footer";
-import ImageSection from "../sections/NewsSections";
+import { Link } from 'react-router-dom';
+import HeaderBg from '../assets/Heading.svg';
+import { AccordionCustomIcon } from '../components/Accordion';
+import PreLoader from '../components/PreLoad';
+import GarudaScene from '../components/Three';
+import CenteredNavbar from '../components/Navbar';
+import { FooterWithSitemap } from '../components/Footer';
+import ImageSection from '../sections/NewsSections';
 
 function Home() {
   return (
@@ -40,7 +40,7 @@ function Home() {
         <div className="flex flex-col-reverse items-start justify-between mx-auto md:flex-row max-w-7xl">
           <div className="mb-8 md:w-1/2 md:mb-0 md:ml-20">
             <h2 className="mb-4 text-5xl kenarose text-[#663A31]">
-              Kenapa sih harus{" "}
+              Kenapa sih harus{' '}
               <span className="text-[#993623]">
                 mengenal lebih dalam tentang Sumpah Pemuda?
               </span>
@@ -60,7 +60,7 @@ function Home() {
               </button>
             </Link>
           </div>
-          <div className="md:w-1/2 md:pl-8">
+          <div className="md:w-1/2 md:pl-8 m-auto">
             <GarudaScene />
           </div>
         </div>
