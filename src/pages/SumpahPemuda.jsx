@@ -1,11 +1,33 @@
+import { useEffect, useRef } from 'react';
 import CenteredNavbar from '../components/Navbar';
 import SumpahPemudaTabs from '../components/Tab';
 import PembuatanSections from '../sections/PembuatanSections';
 import VoiceSections from '../sections/VoiceSections';
 import HeaderBg from '../assets/Heading.svg';
 import { FooterWithSocialLinks } from '../components/Footer';
+import BackgroundAudio from '../assets/audio/background.mp3'; // Import background audio
 
 function SumpahPemuda() {
+  const backgroundAudioRef = useRef(null); // Referensi untuk background audio
+
+  // Play background audio saat halaman dimuat
+  useEffect(() => {
+    if (backgroundAudioRef.current) {
+      backgroundAudioRef.current.play();
+    }
+  }, []);
+
+  // Fungsi untuk menjeda atau melanjutkan background audio
+  const toggleBackgroundAudio = (pause) => {
+    if (backgroundAudioRef.current) {
+      if (pause) {
+        backgroundAudioRef.current.pause();
+      } else {
+        backgroundAudioRef.current.play();
+      }
+    }
+  };
+
   return (
     <div
       className="bg-center bg-no-repeat bg-cover md:h-[29rem] h-[32rem]"
@@ -56,12 +78,15 @@ function SumpahPemuda() {
 
         {/* Isi Sumpah Pemuda Section */}
         <section className="bg-[#F4D9D0]">
-          <VoiceSections />
+          <VoiceSections toggleBackgroundAudio={toggleBackgroundAudio} /> {/* Pass the function */}
         </section>
       </main>
       <div>
-        <FooterWithSocialLinks/>
+        <FooterWithSocialLinks />
       </div>
+
+      {/* Background audio player */}
+      <audio ref={backgroundAudioRef} src={BackgroundAudio} loop />
     </div>
   );
 }

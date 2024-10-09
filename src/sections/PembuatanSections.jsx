@@ -6,8 +6,7 @@ function PembuatanSections() {
   return (
     <div>
       {/* Proses Pembuatan Sumpah Pemuda Section */}
-
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-up">
         <h2 className="mb-6 md:text-5xl text-2xl mx-4 md:mx-0 kenarose text-[#F4D9D0]">
           Proses Pembuatan Sumpah Pemuda
         </h2>
@@ -15,7 +14,7 @@ function PembuatanSections() {
 
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         {/* Text List */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2" data-aos="fade-right">
           <ul className="list-decimal mx-5 md:mx-0 list-inside kenarose md:text-3xl font-sans space-y-3">
             <li>Rapat pertama di Gedung Katholieke Jongenlingen Bond (KJB)</li>
             <li>Rapat kedua di Gedung Oost-Java Bioscoop</li>
@@ -23,7 +22,8 @@ function PembuatanSections() {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/2 flex gap-2 md:px-0 px-4">
+        {/* Image List */}
+        <div className="w-full md:w-1/2 flex gap-2 md:px-0 px-4" data-aos="fade-left">
           <div className="w-5/12 flex flex-col gap-2">
             <div
               className="relative rounded-lg overflow-hidden group w-full h-1/2 bg-center bg-cover"

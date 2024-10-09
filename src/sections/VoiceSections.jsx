@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useState, useRef } from 'react';
 import VinylImage from '../assets/VinylImage.png'; // Gambar vinyl yang diunggah
 import AudioFile from '../assets/audio/sumpah_pemuda.mp3'; // File audio yang akan diimport
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
-const VoiceSections = () => {
+const VoiceSections = ({ toggleBackgroundAudio }) => {
   const audioRef = useRef(null); // Referensi untuk audio player
   const [isPlaying, setIsPlaying] = useState(false); // State untuk status play/pause
   const [audioDuration, setAudioDuration] = useState('0:00'); // State untuk durasi audio
@@ -14,8 +15,10 @@ const VoiceSections = () => {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
+        toggleBackgroundAudio(false); // Resume background audio
       } else {
         audioRef.current.play();
+        toggleBackgroundAudio(true); // Pause background audio
       }
       setIsPlaying(!isPlaying);
     }
@@ -32,9 +35,9 @@ const VoiceSections = () => {
   };
 
   return (
-    <section className="flex md:flex-row flex-col justify-center items-center py-12 space-x-12">
+    <section className="flex md:flex-row flex-col justify-center items-center py-12 space-x-12" data-aos="fade-up">
       {/* Vinyl dan Audio Player */}
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center" data-aos="zoom-in">
         {/* Vinyl Image with rotation animation */}
         <div
           className={`-mb-[4rem] w-64 h-64 ${
@@ -49,7 +52,7 @@ const VoiceSections = () => {
         </div>
 
         {/* Audio Controls */}
-        <div className="z-20 bg-gradient-to-b from-[#130D2C] to-[#271A5E] text-white rounded-lg p-4 md:w-[24vw] w-[18rem] flex flex-col items-center">
+        <div className="z-20 bg-gradient-to-b from-[#130D2C] to-[#271A5E] text-white rounded-lg p-4 md:w-[24vw] w-[18rem] flex flex-col items-center" data-aos="fade-right">
           <p className="poppins-bold md:text-lg text-xl md:mb-2 mb-0.5">
             Sumpah Pemuda
           </p>
@@ -81,7 +84,7 @@ const VoiceSections = () => {
       </div>
 
       {/* Isi Sumpah Pemuda */}
-      <div className="md:mt-0 mt-10">
+      <div className="md:mt-0 mt-10" data-aos="fade-left">
         <h2 className="text-[#8E2820] kenarose text-3xl mb-6">
           Isi Sumpah Pemuda
         </h2>
