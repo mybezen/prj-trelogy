@@ -1,8 +1,8 @@
-import CenteredNavbar from '../components/Navbar';
-import SumpahPemudaTabs from '../components/Tab';
-import PembuatanSections from '../sections/PembuatanSections';
-import VoiceSections from '../sections/VoiceSections';
-import HeaderBg from '../assets/Heading.svg';
+import CenteredNavbar from "../components/Navbar";
+import SumpahPemudaTabs from "../components/Tab";
+import PembuatanSections from "../sections/PembuatanSections";
+import VoiceSections from "../sections/VoiceSections";
+import HeaderBg from "../assets/Heading.svg";
 
 function SumpahPemuda() {
   return (
@@ -16,14 +16,14 @@ function SumpahPemuda() {
       <CenteredNavbar />
 
       {/* Main Content */}
-      <main className="md:py-8 mx-auto">
+      <main className="mx-auto md:py-8">
         {/* Rumusan Kongres Section */}
-        <section className="md:mb-8 px-6 lg:px-12 md:py-8 py-3 rounded-lg w-full bg-cover bg-center bg-no-repeat">
+        <section className="w-full px-6 py-3 bg-center bg-no-repeat bg-cover rounded-lg md:mb-8 lg:px-12 md:py-8">
           <h1 className="kenarose mb-6 text-3xl lg:text-5xl font-extrabold text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
             Rumusan Kongres
           </h1>
 
-          <p className="mb-6 lg:text-lg text-sm mx-3 md:mx-0 leading-relaxed text-white plus-jakarta-sans-semibold text-left">
+          <p className="mx-3 mb-6 text-sm leading-relaxed text-left text-white lg:text-lg md:mx-0 plus-jakarta-sans-semibold">
             Rumusan Kongres Sumpah Pemuda yang diadakan pada tahun 1928
             dirumuskan oleh Mohammad Yamin saat Mr. Sunario sedang berpidato di
             sesi terakhir kongres. Yamin menyampaikan gagasan kepada Soegondo
@@ -47,14 +47,14 @@ function SumpahPemuda() {
 
         {/* Proses Pembuatan Sumpah Pemuda Section */}
         <section
-          className="mb-0 py-8 text-white bg-cover bg-center bg-no-repeat"
+          className="py-8 mb-0 text-white bg-center bg-no-repeat bg-cover"
           style={{ backgroundImage: "url('/assets/HeaderBG.png')" }}
         >
           <PembuatanSections />
         </section>
 
         {/* Isi Sumpah Pemuda Section */}
-        <section>
+        <section className="bg-[#F4D9D0]">
           <VoiceSections />
         </section>
       </main>
