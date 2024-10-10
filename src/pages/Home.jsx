@@ -11,17 +11,6 @@ import CapabSections from '../sections/CapabSections';
 import BackgroundAudio from '../assets/audio/background.mp3';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import HeaderBg from '../assets/Heading.svg';
-import { AccordionCustomIcon } from '../components/Accordion';
-import PreLoader from '../components/PreLoad';
-import GarudaScene from '../components/Three';
-import CenteredNavbar from '../components/Navbar';
-import { FooterWithSocialLinks } from '../components/Footer';
-import ImageSection from '../sections/NewsSections';
-import CapabSections from '../sections/CapabSections';
-import BackgroundAudio from '../assets/audio/background.mp3';
 
 function Home() {
   // Reference to the audio element
