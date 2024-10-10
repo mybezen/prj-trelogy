@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react';
-import CenteredNavbar from '../components/Navbar';
-import SumpahPemudaTabs from '../components/Tab';
-import PembuatanSections from '../sections/PembuatanSections';
-import VoiceSections from '../sections/VoiceSections';
-import HeaderBg from '../assets/Heading.svg';
-import { FooterWithSocialLinks } from '../components/Footer';
-import BackgroundAudio from '../assets/audio/background.mp3'; // Import background audio
+import { useEffect, useRef } from "react";
+import CenteredNavbar from "../components/Navbar";
+import SumpahPemudaTabs from "../components/Tab";
+import PembuatanSections from "../sections/PembuatanSections";
+import VoiceSections from "../sections/VoiceSections";
+import HeaderBg from "../assets/Heading.svg";
+import { FooterWithSocialLinks } from "../components/Footer";
+import BackgroundAudio from "../assets/audio/background.mp3"; // Import background audio
 
 function SumpahPemuda() {
   const backgroundAudioRef = useRef(null); // Referensi untuk background audio
@@ -29,34 +29,39 @@ function SumpahPemuda() {
   };
 
   return (
-    <div
-      className="bg-center bg-no-repeat bg-cover md:h-[29rem] h-[32rem]"
-      style={{
-        backgroundImage: `url(${HeaderBg})`, // Set the background image
-      }}
-    >
-      {/* Navigation */}
-      <CenteredNavbar />
+    <div>
+      <main className="mx-auto">
+        <section
+          // ganti md:h kalo kekecilan
+          className="w-full h-[32rem] md:h-[40rem] px-6 py-3 bg-center bg-no-repeat bg-cover lg:px-20 md:py-8"
+          style={{
+            backgroundImage: `url(${HeaderBg})`,
+          }}
+        >
+          <CenteredNavbar />
+          <div className="flex mt-24">
+            <div className="w-7/12">
+              <h1 className="kenarose mb-6 text-3xl lg:text-5xl font-extrabold text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
+                Rumusan Kongres
+              </h1>
 
-      {/* Main Content */}
-      <main className="mx-auto md:py-8">
-        {/* Rumusan Kongres Section */}
-        <section className="w-full px-6 py-3 bg-center bg-no-repeat bg-cover rounded-lg md:mb-8 lg:px-12 md:py-8">
-          <h1 className="kenarose mb-6 text-3xl lg:text-5xl font-extrabold text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
-            Rumusan Kongres
-          </h1>
-
-          <p className="mx-3 mb-6 text-sm leading-relaxed text-left text-white lg:text-lg md:mx-0 plus-jakarta-sans-semibold">
-            Rumusan Kongres Sumpah Pemuda yang diadakan pada tahun 1928
-            dirumuskan oleh Mohammad Yamin saat Mr. Sunario sedang berpidato di
-            sesi terakhir kongres. Yamin menyampaikan gagasan kepada Soegondo
-            bahwa ia memiliki formulasi yang lebih elegan untuk keputusan
-            kongres. Setelah mendapat persetujuan dari Soegondo dan peserta
-            lainnya, rumusan tersebut akhirnya dibacakan oleh Soegondo dan
-            dijelaskan lebih lanjut oleh Yamin. Rumusan ini kemudian dikenal
-            sebagai Sumpah Pemuda, yang berisi tiga poin utama: pengakuan akan
-            satu tanah air, satu bangsa, dan satu bahasa, yaitu Indonesia.
-          </p>
+              <p className="mx-3 mb-6 text-sm leading-relaxed text-left text-white lg:text-lg md:mr-20 plus-jakarta-sans-semibold">
+                Rumusan Kongres Sumpah Pemuda yang diadakan pada tahun 1928
+                dirumuskan oleh Mohammad Yamin saat Mr. Sunario sedang berpidato
+                di sesi terakhir kongres. Yamin menyampaikan gagasan kepada
+                Soegondo bahwa ia memiliki formulasi yang lebih elegan untuk
+                keputusan kongres. Setelah mendapat persetujuan dari Soegondo
+                dan peserta lainnya, rumusan tersebut akhirnya dibacakan oleh
+                Soegondo dan dijelaskan lebih lanjut oleh Yamin. Rumusan ini
+                kemudian dikenal sebagai Sumpah Pemuda, yang berisi tiga poin
+                utama: pengakuan akan satu tanah air, satu bangsa, dan satu
+                bahasa, yaitu Indonesia.
+              </p>
+            </div>
+            <div className="w-5/12 flex justify-center items-center">
+              <div className="w-1/3 bg-pink-400 h-36"></div>
+            </div>
+          </div>
         </section>
 
         <section className="bg-[#F4D9D0] pt-6 md:pt-0">
@@ -78,7 +83,8 @@ function SumpahPemuda() {
 
         {/* Isi Sumpah Pemuda Section */}
         <section className="bg-[#F4D9D0]">
-          <VoiceSections toggleBackgroundAudio={toggleBackgroundAudio} /> {/* Pass the function */}
+          <VoiceSections toggleBackgroundAudio={toggleBackgroundAudio} />{" "}
+          {/* Pass the function */}
         </section>
       </main>
       <div>
