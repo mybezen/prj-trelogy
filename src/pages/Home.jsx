@@ -1,16 +1,17 @@
-import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import HeaderBg from "../assets/Heading.svg";
-import { AccordionCustomIcon } from "../components/Accordion";
-import PreLoader from "../components/PreLoad";
-import GarudaScene from "../components/Three";
-import CenteredNavbar from "../components/Navbar";
-import { FooterWithSocialLinks } from "../components/Footer";
-import ImageSection from "../sections/NewsSections";
-import CapabSections from "../sections/CapabSections";
-import BackgroundAudio from "../assets/audio/background.mp3";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import HeaderBg from '../assets/Heading.svg';
+import { AccordionCustomIcon } from '../components/Accordion';
+import PreLoader from '../components/PreLoad';
+import GarudaScene from '../components/Three';
+import CenteredNavbar from '../components/Navbar';
+import { FooterWithSocialLinks } from '../components/Footer';
+import ImageSection from '../sections/NewsSections';
+import CapabSections from '../sections/CapabSections';
+import BackgroundAudio from '../assets/audio/background.mp3';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+import NewsBg from '../assets/NewsImages/news-bg.png';
 
 function Home() {
   // Reference to the audio element
@@ -84,7 +85,7 @@ function Home() {
         >
           <div className="mb-8 md:w-1/2 md:mb-0 md:ml-20" data-aos="zoom-in">
             <h2 className="mb-4 text-5xl kenarose text-[#663A31]">
-              Kenapa sih harus{" "}
+              Kenapa sih harus{' '}
               <span className="text-[#993623]">
                 mengenal lebih dalam tentang Sumpah Pemuda?
               </span>
@@ -118,10 +119,13 @@ function Home() {
         <CapabSections />
       </section>
 
-      <div className="flex flex-col bg-gradient-to-r from-[#3B100C] to-[#A12B20]">
-        <section
-          className="flex items-center justify-center pt-5 mx-auto mb-[8vh]"
-        >
+      <div
+        className="flex flex-col bg-cover bg-center relative"
+        style={{ backgroundImage: `url(${NewsBg})` }}
+      >
+        <div className="absolute top-0 left-0 w-full h-[60vh] bg-gradient-to-b from-red-800 to-transparent z-0"></div>
+
+        <section className="flex items-center justify-center pt-5 mx-auto mb-[8vh] relative z-10">
           <ImageSection />
         </section>
       </div>
