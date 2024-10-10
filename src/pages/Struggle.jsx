@@ -1,29 +1,24 @@
-import HeaderBg from "../assets/Heading.svg"; // Import background image for second section
-import { FooterWithSocialLinks } from "../components/Footer";
-import CenteredNavbar from "../components/Navbar";
+import HeaderBg from '../assets/Heading.svg'; // Import background image for second section
+import { FooterWithSocialLinks } from '../components/Footer';
+import CenteredNavbar from '../components/Navbar';
+import StrugBg from '../assets/strug-bg.jpg';
+import StrugCarousel from '../sections/StrugCarousel';
 
 function StrugglePages() {
   return (
     <div className="">
-      <div className="relative">
-        <CenteredNavbar />
-      </div>
-
-      {/* Section Pertama with Gradient Overlay */}
       <section
-        className="relative h-[70vh] w-full bg-cover bg-center z-50"
-        style={{ backgroundImage: `url(${HeaderBg})` }}
+        className="md:h-[100vh] h-44 bg-cover bg-top"
+        style={{ backgroundImage: `url(${StrugBg})` }}
       >
-        {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-70"></div>
-
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-start justify-center h-full max-w-6xl px-6 mx-auto lg:px-12">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-white lg:text-6xl">
-            Perjuangan Singkat Sumpah Pemuda
-          </h1>
-          <div className="pl-4 border-l-4 border-white">
-            <p className="leading-relaxed text-white lg:text-lg">
+        <div className="absolute md:h-[100vh] h-56 inset-0 bg-gradient-to-t from-red-800 to-transparent"></div>
+        <CenteredNavbar />
+        <div className="w-full h-screen flex items-center">
+          <div className="w-9/12 mx-auto z-10">
+            <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-left text-white">
+              Perjuangan Singkat Sumpah Pemuda
+            </h1>
+            <p className="plus-jakarta-sans-semibold text-white text-xl px-4 border-l-4 border-white mx-4">
               Perjuangan menuju Sumpah Pemuda merupakan proses panjang yang
               dilalui oleh kaum muda Indonesia dalam upaya membangun kesadaran
               nasionalisme dan persatuan di tengah penjajahan kolonial Belanda.
@@ -34,44 +29,32 @@ function StrugglePages() {
         </div>
       </section>
 
-      {/* Section Kedua with Bottom Gradient */}
-      <section className="relative py-16 bg-center bg-cover -z-50 bg-gradient-to-b from-black to-red-600">
-        {/* Gradient overlay for this section */}
-        <div className="absolute inset-0 bg-gradient-to-t from-red-600 via-transparent to-transparent opacity-90"></div>
+      <section
+        className="relative w-full h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${HeaderBg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-red-800 to-transparent"></div>
 
-        <div className="relative z-10 max-w-6xl px-6 mx-auto lg:px-12">
-          {/* Judul Section */}
-          <div className="border-b-4 border-white">
-            <p className="text-white text-6xltext-center lg:text-lg">
-              Nilai Nilai Sumpah Pemuda
-            </p>
+        <div className="relative z-10 flex w-full h-full items-center">
+          <div className="w-7/12 px-5 ml-14">
+            <div className="">
+              <h1 className="text-white text-4xl font-bold">
+                Nilai-nilai Sumpah Pemuda
+              </h1>
+              <p className="text-white mt-4 text-xl">
+                Nilai-nilai yang terkandung dalam Sumpah Pemuda mencerminkan
+                semangat persatuan, kebersamaan, dan cinta tanah air yang
+                menjadi dasar perjuangan para pemuda Indonesia dalam mencapai
+                kemerdekaan.
+              </p>
+            </div>
+            <div className="w-9/12 mt-10">
+              <StrugCarousel />
+            </div>
           </div>
-
-          {/* Deskripsi Section */}
-          <p className="mb-8 italic text-center text-white lg:text-lg">
-            Nilai-nilai yang terkandung dalam Sumpah Pemuda mencerminkan
-            semangat persatuan, kebersamaan, dan cinta tanah air yang menjadi
-            dasar perjuangan para pemuda Indonesia dalam memperjuangkan
-            kemerdekaan.
-          </p>
-
-          {/* Daftar Nilai-nilai */}
-          <ul className="space-y-2 text-lg text-white list-disc list-inside lg:text-xl">
-            <li>Cinta Bangsa dan Tanah Air</li>
-            <li>Persatuan</li>
-            <li>Sikap Rela Berkorban</li>
-            <li>Semangat Gotong Royong</li>
-            <li>Menerima dan Menghargai Perbedaan</li>
-            <li>Mengutamakan Kepentingan Bangsa</li>
-            <li>Nilai Semangat Persaudaraan</li>
-          </ul>
+          <div className="w-5/12 h-64 bg-pink-400 mr-14"></div>
         </div>
       </section>
-
-      <section className="h-[700px]"></section>
-      <div>
-        <FooterWithSocialLinks/>
-      </div>
     </div>
   );
 }
