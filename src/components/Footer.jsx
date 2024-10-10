@@ -1,4 +1,5 @@
 import { Typography } from "@material-tailwind/react";
+import XIcon from "/assets/XIcon.png";
 
 //Icon
 
@@ -21,7 +22,7 @@ const currentYear = new Date().getFullYear();
 
 export function FooterWithSocialLinks() {
   return (
-    <footer className="w-full bg-slate-300">
+    <footer className="w-full bg-white">
       <div className="w-full max-w-full px-8 pt-12">
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
           <Typography
@@ -59,29 +60,20 @@ export function FooterWithSocialLinks() {
           <div className="flex gap-4 text-black-900 ">
             <Typography
               as="a"
-              href="#"
+              href=""
+              target="_blank"
               className="transition-opacity opacity-80 hover:opacity-100"
             >
-              <svg
-                className="w-5 h-5"
-                fill="black"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <img src={XIcon} className="w-8 h-8"></img>
             </Typography>
             <Typography
               as="a"
-              href="#"
+              href="https://www.instagram.com/peintagons/"
+              target="_blank"
               className="transition-opacity opacity-80 hover:opacity-100"
             >
               <svg
-                className="w-5 h-5"
+                className="w-8 h-8"
                 fill="black"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

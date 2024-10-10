@@ -1,18 +1,20 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Default carousel stylesimport "./carouselCustom.css"; // Custom styles
 import SlideIcon1 from "../assets/BuildingImages/IC.png";
+import SliderIcon1 from "../assets/SliderImages/Ikrar.png";
 import SlideIcon2 from "../assets/BuildingImages/OJB.png";
+import SliderIcon2 from "../assets/SliderImages/Blog.png";
 import SlideIcon3 from "../assets/BuildingImages/JJB.jpg";
 
 function ImageSection() {
   return (
-    <div className="flex items-center md:w-10/12 mx-1 md:mx-0">
+    <div className="flex items-center mx-1 md:w-10/12 md:mx-0">
       <div className="flex flex-col w-5/12 md:items-end">
         <div className="md:w-[300px] md:h-[215px] overflow-hidden rounded-lg ml-2 mb-2">
           <img
             src={SlideIcon1}
             alt="Lorong Zaman"
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
 
@@ -20,7 +22,7 @@ function ImageSection() {
           <img
             src={SlideIcon2}
             alt="Kolom"
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
       </div>
@@ -34,27 +36,27 @@ function ImageSection() {
           showStatus={false}
           showIndicators={true}
         >
-          <div className="w-full h-full">
+          <div className="w-full h-[46.25vh]">
             <img
-              src={SlideIcon1}
+              src={SliderIcon1}
               alt="Pablo Neruda 1"
-              className="w-full h-full object-cover bg-center"
+              className="object-cover w-full h-full bg-top"
             />
-            <p className="legend">Jejak Pablo Neruda di Jakarta</p>
+            <p className="legend">Halaman Pengikraran</p>
           </div>
-          <div className="w-full h-full">
+          <div className="w-full h-[46.25vh]">
             <img
-              src={SlideIcon2}
+              src={SliderIcon2}
               alt="Pablo Neruda 2"
-              className="w-full h-full object-cover bg-center"
+              className="object-cover w-full h-full bg-top"
             />
-            <p className="legend -mt-52">Pablo Journey</p>
+            <p className="legend -mt-52">Halaman Blog</p>
           </div>
-          <div className="w-full h-full">
+          <div className="w-full h-[46.25vh]">
             <img
               src={SlideIcon3}
               alt="Pablo Neruda 3"
-              className="w-full h-full object-cover bg-center"
+              className="object-cover w-full h-full bg-center"
             />
             <p className="legend">Diplomat & Poet</p>
           </div>

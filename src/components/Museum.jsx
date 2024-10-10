@@ -31,7 +31,7 @@ function MuseumScene() {
         <directionalLight position={[-5, 5, 5]} intensity={1.5} />
 
         <GarudaModel />
-        <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={2} />
+        <OrbitControls enableZoom={true} autoRotate autoRotateSpeed={2} />
       </Suspense>
     </Canvas>
   );

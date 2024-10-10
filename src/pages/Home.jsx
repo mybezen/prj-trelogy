@@ -29,7 +29,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden text-white bg-red-800">
+    <div className="overflow-hidden text-white">
       <PreLoader />
 
       {/* Audio Element */}
@@ -108,10 +108,7 @@ function Home() {
               </button>
             </Link>
           </div>
-          <div
-            className="w-full m-auto md:w-1/2 md:pl-8"
-            data-aos="zoom-in-left"
-          >
+          <div className="w-full m-auto md:w-1/2 md:pl-8">
             <GarudaScene />
           </div>
         </div>
@@ -120,13 +117,14 @@ function Home() {
       <section className="w-screen" data-aos="fade-up">
         <CapabSections />
       </section>
-
-      <section
-        className="flex items-center justify-center pt-5 mx-auto"
-        data-aos="fade-in"
-      >
-        <ImageSection />
-      </section>
+      <div className="flex flex-col bg-gradient-to-r from-[#3B100C] to-[#A12B20]">
+        <section
+          className="flex items-center justify-center pt-5 mx-auto mb-[8vh] "
+          data-aos="fade-in"
+        >
+          <ImageSection />
+        </section>
+      </div>
 
       <footer data-aos="fade-up">
         <FooterWithSocialLinks />
