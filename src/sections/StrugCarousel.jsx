@@ -1,8 +1,5 @@
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Default carousel stylesimport "./carouselCustom.css"; // Custom styles
-import SlideIcon1 from '../assets/BuildingImages/IC.png';
-import SlideIcon2 from '../assets/BuildingImages/OJB.png';
-import SlideIcon3 from '../assets/BuildingImages/JJB.jpg';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Default carousel stylesimport "./carouselCustom.css"; // Custom styles
 
 function StrugCarousel() {
   return (

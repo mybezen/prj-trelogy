@@ -1,16 +1,16 @@
-import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import HeaderBg from '../assets/Heading.svg';
-import { AccordionCustomIcon } from '../components/Accordion';
-import PreLoader from '../components/PreLoad';
-import GarudaScene from '../components/Three';
-import CenteredNavbar from '../components/Navbar';
-import { FooterWithSocialLinks } from '../components/Footer';
-import ImageSection from '../sections/NewsSections';
-import CapabSections from '../sections/CapabSections';
-import BackgroundAudio from '../assets/audio/background.mp3';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import HeaderBg from "../assets/Heading.svg";
+import { AccordionCustomIcon } from "../components/Accordion";
+import PreLoader from "../components/PreLoad";
+import GarudaScene from "../components/Three";
+import CenteredNavbar from "../components/Navbar";
+import { FooterWithSocialLinks } from "../components/Footer";
+import ImageSection from "../sections/NewsSections";
+import CapabSections from "../sections/CapabSections";
+import BackgroundAudio from "../assets/audio/background.mp3";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function Home() {
   // Reference to the audio element
@@ -84,7 +84,7 @@ function Home() {
         >
           <div className="mb-8 md:w-1/2 md:mb-0 md:ml-20" data-aos="zoom-in">
             <h2 className="mb-4 text-5xl kenarose text-[#663A31]">
-              Kenapa sih harus{' '}
+              Kenapa sih harus{" "}
               <span className="text-[#993623]">
                 mengenal lebih dalam tentang Sumpah Pemuda?
               </span>
@@ -117,7 +117,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="h-[12rem] bg-[#f2f2f2] w-screen" data-aos="fade-up">
+      <section className="w-screen" data-aos="fade-up">
         <CapabSections />
       </section>
 
