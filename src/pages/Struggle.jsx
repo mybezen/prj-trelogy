@@ -1,8 +1,8 @@
 import HeaderBg from '../assets/Heading.svg'; // Import background image for second section
-import { FooterWithSocialLinks } from '../components/Footer';
 import CenteredNavbar from '../components/Navbar';
 import StrugBg from '../assets/strug-bg.jpg';
 import StrugCarousel from '../sections/StrugCarousel';
+import MuseumScene from '../components/Museum';
 
 function StrugglePages() {
   return (
@@ -52,7 +52,9 @@ function StrugglePages() {
               <StrugCarousel />
             </div>
           </div>
-          <div className="w-5/12 h-64 bg-pink-400 mr-14"></div>
+          <div className="w-5/12 h-64 mr-14">
+          <MuseumScene/>
+          </div>
         </div>
       </section>
     </div>
