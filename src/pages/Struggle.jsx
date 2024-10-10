@@ -5,6 +5,7 @@ import StrugCarousel from "../sections/StrugCarousel";
 import MuseumScene from "../components/Museum";
 import TimelineSections from "../sections/TimelineSections";
 import TimelineBg from "../assets/timeline-bg.svg";
+import { FooterWithSocialLinks } from "../components/Footer";
 
 function StrugglePages() {
   return (
@@ -15,12 +16,12 @@ function StrugglePages() {
       >
         <div className="absolute md:h-[100vh] h-56 inset-0 bg-gradient-to-t from-red-800 to-transparent"></div>
         <CenteredNavbar />
-        <div className="w-full h-screen flex items-center">
-          <div className="w-9/12 mx-auto z-10">
-            <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-left text-white">
+        <div className="flex items-center w-full h-screen">
+          <div className="z-10 w-9/12 mx-auto">
+            <h1 className="mb-6 text-3xl text-left text-white kenarose lg:text-5xl">
               Perjuangan Singkat Sumpah Pemuda
             </h1>
-            <p className="plus-jakarta-sans-semibold text-white text-xl px-4 border-l-4 border-white mx-4">
+            <p className="px-4 mx-4 text-xl text-white border-l-4 border-white plus-jakarta-sans-semibold">
               Perjuangan menuju Sumpah Pemuda merupakan proses panjang yang
               dilalui oleh kaum muda Indonesia dalam upaya membangun kesadaran
               nasionalisme dan persatuan di tengah penjajahan kolonial Belanda.
@@ -31,42 +32,42 @@ function StrugglePages() {
         </div>
       </section>
 
- <section className="relative w-full min-h-screen bg-red-800 pt-20 text-white px-20">
-  {/* Gradien atas untuk menutupi bagian atas */}
-  <div className="absolute inset-0 h-full bg-gradient-to-b from-red-800 via-red-800/70 to-transparent z-10 pointer-events-none"></div>
-  
-  {/* Gradien bawah untuk menutupi hard crop di bagian bawah */}
-  <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-red-800 to-transparent z-10 pointer-events-none"></div>
+      <section className="relative w-full min-h-screen px-20 pt-20 text-white bg-red-800">
+        {/* Gradien atas untuk menutupi bagian atas */}
+        <div className="absolute inset-0 z-10 h-full pointer-events-none bg-gradient-to-b from-red-800 via-red-800/70 to-transparent"></div>
 
-  <div
-    className="flex flex-col justify-center items-center h-full bg-no-repeat bg-cover bg-top"
-    style={{ backgroundImage: `url(${TimelineBg})`, backgroundSize: 'cover' }}
-  >
-    <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-center relative z-20">
-      Perjalanan
-    </h1>
-    <div className="relative z-20 w-full max-w-4xl">
-      <TimelineSections />
-    </div>
-  </div>
-</section>
+        {/* Gradien bawah untuk menutupi hard crop di bagian bawah */}
+        <div className="absolute inset-x-0 bottom-0 z-10 h-32 pointer-events-none bg-gradient-to-t from-red-800 to-transparent"></div>
 
-
-
+        <div
+          className="flex flex-col items-center justify-center h-full bg-top bg-no-repeat bg-cover"
+          style={{
+            backgroundImage: `url(${TimelineBg})`,
+            backgroundSize: "cover",
+          }}
+        >
+          <h1 className="relative z-20 mb-6 text-3xl text-center kenarose lg:text-5xl">
+            Perjalanan
+          </h1>
+          <div className="relative z-20 w-full max-w-4xl">
+            <TimelineSections />
+          </div>
+        </div>
+      </section>
 
       <section
-        className="relative w-full h-screen bg-cover bg-center"
+        className="relative w-full h-screen bg-center bg-cover"
         style={{ backgroundImage: `url(${HeaderBg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-red-800 to-transparent"></div>
 
-        <div className="relative z-10 flex w-full h-full items-center">
+        <div className="relative z-10 flex items-center w-full h-full">
           <div className="w-7/12 px-5 ml-14">
             <div className="">
-              <h1 className="text-white text-4xl font-bold">
+              <h1 className="text-4xl font-bold text-white">
                 Nilai-nilai Sumpah Pemuda
               </h1>
-              <p className="text-white mt-4 text-xl">
+              <p className="mt-4 text-xl text-white">
                 Nilai-nilai yang terkandung dalam Sumpah Pemuda mencerminkan
                 semangat persatuan, kebersamaan, dan cinta tanah air yang
                 menjadi dasar perjuangan para pemuda Indonesia dalam mencapai
@@ -82,6 +83,10 @@ function StrugglePages() {
           </div>
         </div>
       </section>
+
+      <footer className="rounded-t-xl">
+        <FooterWithSocialLinks />
+      </footer>
     </div>
   );
 }

@@ -60,7 +60,7 @@ export function FooterWithSocialLinks() {
           <div className="flex gap-4 text-black-900 ">
             <Typography
               as="a"
-              href=""
+              href="https://x.com/peintagons_id"
               target="_blank"
               className="transition-opacity opacity-80 hover:opacity-100"
             >
