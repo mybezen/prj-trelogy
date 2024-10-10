@@ -5,12 +5,12 @@ import { useGLTF, OrbitControls } from "@react-three/drei";
 
 function GarudaModel() {
   // Assuming 'garuda.glb' is placed in the public/assets folder
-  const gltf = useGLTF("/assets/museum.glb");
+  const gltf = useGLTF("/assets/pancasila.glb");
   return (
     <primitive
       object={gltf.scene}
-      scale={[0.25, 0.25, 0.25]} // Adjust the size
-      position={[-5, -2, 0]} // Adjust the position
+      scale={[7, 7, 7]} // Adjust the size
+      position={[0, -1, 0]} // Adjust the position
       rotation={[0, 0, 0]}
     />
   );
@@ -31,7 +31,7 @@ function MuseumScene() {
         <directionalLight position={[-5, 5, 5]} intensity={1.5} />
 
         <GarudaModel />
-        <OrbitControls enableZoom={true} autoRotate autoRotateSpeed={2} />
+        <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={2} />
       </Suspense>
     </Canvas>
   );
