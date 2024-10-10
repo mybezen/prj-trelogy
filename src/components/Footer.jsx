@@ -1,19 +1,19 @@
-import { Typography } from '@material-tailwind/react';
+import { Typography } from "@material-tailwind/react";
 
 //Icon
 
 const LINKS = [
   {
-    title: 'Daftar Konten',
-    items: ['Beranda', 'Perjuangan Singkat', 'Ikrar', 'Blog', 'Tim Kami'],
+    title: "Daftar Konten",
+    items: ["Beranda", "Perjuangan Singkat", "Ikrar", "Blog", "Tim Kami"],
   },
   {
-    title: 'Member',
-    items: ['Sultan', 'Amri', 'Sayid', 'Bintang', 'Fadhlan'],
+    title: "Member",
+    items: ["Sultan", "Amri", "Sayid", "Bintang", "Fadhlan"],
   },
   {
-    title: 'Credit',
-    items: ['@Peintagons',],
+    title: "Credit",
+    items: ["PeintagonsTeam"],
   },
 ];
 
@@ -24,8 +24,11 @@ export function FooterWithSocialLinks() {
     <footer className="w-full bg-slate-300">
       <div className="w-full max-w-full px-8 pt-12">
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6 kenarose italic text-3xl text-black">
-            Peintagons
+          <Typography
+            variant="h5"
+            className="mb-6 text-3xl italic text-black kenarose"
+          >
+            JejakPemuda
           </Typography>
           <div className="grid justify-between grid-cols-3 gap-4">
             {LINKS.map(({ title, items }) => (
@@ -95,9 +98,9 @@ export function FooterWithSocialLinks() {
         <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-black md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className="mb-4 text-center poppins-regular text-black md:mb-0"
+            className="mb-4 text-center text-black poppins-regular md:mb-0"
           >
-            &copy; {currentYear}{' '}
+            &copy; {currentYear}{" "}
             <a href="https://material-tailwind.com/">Peintagons</a>. All Rights
             Reserved.
           </Typography>
