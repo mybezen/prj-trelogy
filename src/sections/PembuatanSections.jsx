@@ -30,6 +30,7 @@ function PembuatanSections() {
               style={{
                 backgroundImage: `url(${BuildingIcon2})`,
               }}
+              data-aos="zoom-in" // Animasi zoom-in untuk gambar pertama
             >
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 ease-in-out"></div>
               <p className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
@@ -39,6 +40,8 @@ function PembuatanSections() {
             <div
               className="relative rounded-lg overflow-hidden group w-full h-1/2 bg-cover bg-center"
               style={{ backgroundImage: `url(${BuildingIcon})` }}
+              data-aos="zoom-in" // Animasi zoom-in untuk gambar kedua
+              data-aos-delay="200" // Tambah delay agar tidak bersamaan
             >
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 ease-in-out"></div>
               <p className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
@@ -49,6 +52,8 @@ function PembuatanSections() {
           <div
             className="relative rounded-lg group w-7/12 overflow-hidden h-96 bg-cover bg-left"
             style={{ backgroundImage: `url(${BuildingIcon1})` }}
+            data-aos="zoom-in" // Animasi zoom-in untuk gambar besar
+            data-aos-delay="400" // Tambah delay lebih lama untuk efek urut
           >
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 ease-in-out"></div>
             <p className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-center py-3 px-2 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">

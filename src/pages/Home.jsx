@@ -114,14 +114,13 @@ function Home() {
         </div>
       </section>
 
-      <section className="w-screen -mb-1" data-aos="fade-up">
+      <section className="w-screen -mb-1">
         <CapabSections />
       </section>
 
       <div className="flex flex-col bg-gradient-to-r from-[#3B100C] to-[#A12B20]">
         <section
           className="flex items-center justify-center pt-5 mx-auto mb-[8vh]"
-          data-aos="fade-in"
         >
           <ImageSection />
         </section>
