@@ -120,7 +120,7 @@ function Home() {
 
       <div className="flex flex-col bg-gradient-to-r from-[#3B100C] to-[#A12B20]">
         <section
-          className="flex items-center justify-center pt-5 mx-auto mb-[8vh] "
+          className="flex items-center justify-center pt-5 mx-auto mb-[8vh]"
           data-aos="fade-in"
         >
           <ImageSection />

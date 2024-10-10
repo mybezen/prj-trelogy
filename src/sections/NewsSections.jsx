@@ -8,9 +8,9 @@ import SlideIcon3 from "../assets/BuildingImages/JJB.jpg";
 
 function ImageSection() {
   return (
-    <div className="flex items-center mx-1 md:w-10/12 md:mx-0">
+    <div className="flex items-center mx-1 md:mx-0">
       <div className="flex flex-col w-5/12 md:items-end">
-        <div className="md:w-[300px] md:h-[215px] overflow-hidden rounded-lg ml-2 mb-2">
+        <div className="md:w-[400px] md:h-[200px] overflow-hidden rounded-lg ml-5 mb-5">
           <img
             src={SlideIcon1}
             alt="Lorong Zaman"
@@ -18,7 +18,7 @@ function ImageSection() {
           />
         </div>
 
-        <div className="md:w-[300px] md:h-[215px] overflow-hidden rounded-lg ml-2">
+        <div className="md:w-[400px] md:h-[200px] overflow-hidden rounded-lg ml-5">
           <img
             src={SlideIcon2}
             alt="Kolom"
@@ -27,7 +27,7 @@ function ImageSection() {
         </div>
       </div>
 
-      <div className="md:w-[37.5rem] overflow-hidden rounded-lg m-2 w-7/12">
+      <div className="md:w-[37.5rem] overflow-hidden rounded-lg m-5 w-7/12">
         <Carousel
           showThumbs={false}
           infiniteLoop
@@ -36,7 +36,7 @@ function ImageSection() {
           showStatus={false}
           showIndicators={true}
         >
-          <div className="w-full h-[46.25vh]">
+          <div className="w-full h-[420px]">
             <img
               src={SliderIcon1}
               alt="Pablo Neruda 1"
@@ -46,7 +46,7 @@ function ImageSection() {
               Halaman Pengikraran
             </a>
           </div>
-          <div className="w-full h-[46.25vh]">
+          <div className="w-full h-[420px]">
             <img
               src={SliderIcon2}
               alt="Pablo Neruda 2"
@@ -56,7 +56,7 @@ function ImageSection() {
               Halaman Blog
             </a>
           </div>
-          <div className="w-full h-[46.25vh]">
+          <div className="w-full h-[420px]">
             <img
               src={SlideIcon3}
               alt="Pablo Neruda 3"
