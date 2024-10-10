@@ -34,19 +34,19 @@ function SumpahPemuda() {
       <main className="mx-auto">
         <section
           // ganti md:h kalo kekecilan
-          className="w-full h-[32rem] md:h-[40rem] px-6 py-3 bg-center bg-no-repeat bg-cover lg:px-20 md:py-8"
+          className="w-full h-[110vh] md:h-[40rem] px-6 py-3 bg-center bg-no-repeat bg-cover lg:px-20 md:py-8"
           style={{
             backgroundImage: `url(${HeaderBg})`,
           }}
         >
           <CenteredNavbar />
           <div className="flex mt-24 flex-col-reverse md:flex-row">
-            <div className="md:w-7/12">
+            <div className="md:w-7/12 w-full">
               <h1 className="kenarose mb-6 text-3xl lg:text-5xl font-extrabold text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
                 Rumusan Kongres
               </h1>
 
-              <p className="mx-3 mb-6 text-sm leading-relaxed text-left text-white lg:text-lg md:mr-20 plus-jakarta-sans-semibold">
+              <p className="mx-3 mb-6 text-sm leading-relaxed text-left text-white md:text-lg md:mr-20 plus-jakarta-sans-semibold">
                 Rumusan Kongres Sumpah Pemuda yang diadakan pada tahun 1928
                 dirumuskan oleh Mohammad Yamin saat Mr. Sunario sedang berpidato
                 di sesi terakhir kongres. Yamin menyampaikan gagasan kepada
@@ -59,7 +59,7 @@ function SumpahPemuda() {
                 bahasa, yaitu Indonesia.
               </p>
             </div>
-            <div className="flex items-center justify-center w-5/12">
+            <div className="flex items-center justify-center md:w-5/12 w-full -mt-32">
               <TextScene />
             </div>
           </div>

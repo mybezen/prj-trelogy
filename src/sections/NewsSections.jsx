@@ -8,9 +8,9 @@ import SlideIcon3 from "../assets/BuildingImages/JJB.jpg";
 
 function ImageSection() {
   return (
-    <div className="flex items-center mx-1 md:mx-0">
-      <div className="flex flex-col w-5/12 md:items-end">
-        <div className="md:w-[400px] md:h-[200px] overflow-hidden rounded-lg ml-5 mb-5">
+    <div className="flex items-center md:flex-row flex-col mt-7 md:mt-0 mx-3 md:mx-0">
+      <div className="flex flex-col md:w-5/12 w-full md:items-end">
+        <div className="md:w-[400px] md:h-[200px] overflow-hidden rounded-lg md:ml-5 mb-5">
           <a href="/kontak">
             <img
               src={SlideIcon1}
@@ -20,7 +20,7 @@ function ImageSection() {
           </a>
         </div>
 
-        <div className="md:w-[400px] md:h-[200px] overflow-hidden rounded-lg ml-5">
+        <div className="md:w-[400px] md:h-[200px] overflow-hidden rounded-lg md:ml-5">
           <a href="/ikrar">
             <img
               src={SlideIcon2}
@@ -31,7 +31,7 @@ function ImageSection() {
         </div>
       </div>
 
-      <div className="md:w-[37.5rem] overflow-hidden rounded-lg m-5 w-7/12">
+      <div className="md:w-[37.5rem] overflow-hidden rounded-lg m-5 w-full">
         <Carousel
           showThumbs={false}
           infiniteLoop
@@ -40,7 +40,7 @@ function ImageSection() {
           showStatus={false}
           showIndicators={true}
         >
-          <div className="w-full h-[420px]">
+          <div className="w-full md:h-[420px] h-[250px]">
             <img
               src={SliderIcon1}
               alt="Pablo Neruda 1"
@@ -50,7 +50,7 @@ function ImageSection() {
               Halaman Pengikraran
             </a>
           </div>
-          <div className="w-full h-[420px]">
+          <div className="w-full md:h-[420px] h-[250px]">
             <img
               src={SliderIcon2}
               alt="Pablo Neruda 2"
@@ -60,7 +60,7 @@ function ImageSection() {
               Halaman Blog
             </a>
           </div>
-          <div className="w-full h-[420px]">
+          <div className="w-full md:h-[420px] h-[250px]">
             <img
               src={SlideIcon3}
               alt="Pablo Neruda 3"

@@ -10,7 +10,7 @@ function GarudaModel() {
     <primitive
       object={gltf.scene}
       scale={[7, 7, 7]} // Adjust the size
-      position={[0, -1, 0]} // Adjust the position
+      position={[0, 0, 0]} // Adjust the position
       rotation={[0, 0, 0]}
     />
   );
@@ -36,7 +36,7 @@ function MuseumScene() {
           enableRotate={false} // Disable manual rotation
           enablePan={false} // Disable panning
           autoRotate
-          autoRotateSpeed={2}
+          autoRotateSpeed={3}
         />
       </Suspense>
     </Canvas>
