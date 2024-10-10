@@ -6,6 +6,7 @@ import VoiceSections from "../sections/VoiceSections";
 import HeaderBg from "../assets/Heading.svg";
 import { FooterWithSocialLinks } from "../components/Footer";
 import BackgroundAudio from "../assets/audio/background.mp3"; // Import background audio
+import TextScene from "../components/TextThree";
 
 function SumpahPemuda() {
   const backgroundAudioRef = useRef(null); // Referensi untuk background audio
@@ -58,8 +59,8 @@ function SumpahPemuda() {
                 bahasa, yaitu Indonesia.
               </p>
             </div>
-            <div className="w-5/12 flex justify-center items-center">
-              <div className="w-1/3 bg-pink-400 h-36"></div>
+            <div className="flex items-center justify-center w-5/12">
+              <TextScene />
             </div>
           </div>
         </section>

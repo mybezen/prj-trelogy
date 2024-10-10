@@ -15,8 +15,8 @@ const SumpahPemudaTabs = () => {
       content: {
         description:
           "Tokoh penting dalam sejarah pergerakan nasional Indonesia. Ia dikenal sebagai ketua Kongres Pemuda I yang melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
-        birthDate: "Tempat, Tanggal Lahir: 22 Februari 1905, Tuban",
-        deathDate: "Wafat: April 1978, Yogyakarta",
+        birthDate: "Tempat, Tanggal Lahir : 22 Februari 1905, Tuban",
+        deathDate: "Wafat : April 1978, Yogyakarta",
       },
     },
     {
@@ -25,8 +25,8 @@ const SumpahPemudaTabs = () => {
       content: {
         description:
           "Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.",
-        birthDate: "Tempat tanggal lahir : Malang, 29 Mei 1903",
-        deathDate: "29 Mei 1969",
+        birthDate: "Tempat, Tanggal lahir : Malang, 29 Mei 1903",
+        deathDate: "Wafat : 29 Mei 1969",
       },
     },
     {
@@ -35,8 +35,8 @@ const SumpahPemudaTabs = () => {
       content: {
         description:
           "Sastrawan, politisi, dan pencetus ide Pancasila, berperan penting dalam kemerdekaan Indonesia",
-        birthDate: "Birth Date",
-        deathDate: "Death Date",
+        birthDate: "Tempat, Tanggal lahir : Sawahlunto, 23 Agustus 1903",
+        deathDate: "Wafat : Jakarta, 17 Oktober 1962",
       },
     },
     {
@@ -45,8 +45,8 @@ const SumpahPemudaTabs = () => {
       content: {
         description:
           "Mantan Perdana Menteri Indonesia, pemimpin politik sayap kiri, dan pejuang kemerdekaan.",
-        birthDate: "Birth Date",
-        deathDate: "Death Date",
+        birthDate: "Tempat, Tanggal lahir : Medan, 27 April 1907",
+        deathDate: "Wafat : Surakarta, 19 Desember 1948",
       },
     },
   ];
@@ -62,7 +62,7 @@ const SumpahPemudaTabs = () => {
   };
 
   return (
-    <div className="w-full md:w-8/12 mx-auto p-4">
+    <div className="w-full p-4 mx-auto md:w-8/12">
       <div className="bg-[#8E2820] rounded-lg md:rounded-3xl p-2 md:p-4 md:px-[13rem] mb-4 flex justify-center gap-2 md:gap-4 w-full mx-auto">
         {tabs.map((tab) => (
           <button
@@ -106,7 +106,7 @@ const SumpahPemudaTabs = () => {
             style={{ backgroundImage: `url(${activeTabData.image})` }}
           ></div>
 
-          <div className="w-full md:w-2/3 md:pl-4 font-medium">
+          <div className="w-full font-medium md:w-2/3 md:pl-4">
             <h2 className="text-2xl md:text-4xl kenarose text-[#8E2820] mb-2">
               {activeTabData.name}
             </h2>
