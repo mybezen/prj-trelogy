@@ -14,7 +14,7 @@ const SumpahPemudaTabs = () => {
       image: SoegondoIcon,
       content: {
         description:
-          "Tokoh penting dalam sejarah pergerakan nasional Indonesia. Ia dikenal sebagai ketua Kongres Pemuda I yang melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
+          "Soegondo Djojopoespito (1905–1978) adalah ketua Kongres Pemuda II yang melahirkan Sumpah Pemuda  pada tahun 1928. Lahir di Tuban, Jawa Timur, ia aktif dalam organisasi PPPI dan berperan besar dalam menyatukan pemuda Indonesia untuk memperjuangkan kemerdekaan. Setelah kemerdekaan, Soegondo berkiprah di BPUPKI dan berbagai kegiatan politik. Ia wafat pada 23 April 1978, dikenang sebagai tokoh penting dalam sejarah persatuan bangsa.",
         birthDate: "Tempat, Tanggal Lahir : 22 Februari 1905, Tuban",
         deathDate: "Wafat : April 1978, Yogyakarta",
       },
