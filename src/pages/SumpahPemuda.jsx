@@ -40,8 +40,8 @@ function SumpahPemuda() {
           }}
         >
           <CenteredNavbar />
-          <div className="flex mt-24">
-            <div className="w-7/12">
+          <div className="flex mt-24 flex-col-reverse md:flex-row">
+            <div className="md:w-7/12">
               <h1 className="kenarose mb-6 text-3xl lg:text-5xl font-extrabold text-left bg-gradient-to-r from-[#FFF3D0] to-[#FF9495] bg-clip-text text-transparent">
                 Rumusan Kongres
               </h1>

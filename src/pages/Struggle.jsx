@@ -4,6 +4,7 @@ import StrugBg from "../assets/strug-bg.jpg";
 import StrugCarousel from "../sections/StrugCarousel";
 import MuseumScene from "../components/Museum";
 import TimelineSections from "../sections/TimelineSections";
+import TimelineBg from "../assets/timeline-bg.svg";
 
 function StrugglePages() {
   return (
@@ -30,12 +31,28 @@ function StrugglePages() {
         </div>
       </section>
 
-      <section className="w-full min-h-screen bg-red-800 pt-20 text-white px-20">
-        <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-center">
-          Perjalanan
-        </h1>
-        <TimelineSections />
-      </section>
+ <section className="relative w-full min-h-screen bg-red-800 pt-20 text-white px-20">
+  {/* Gradien atas untuk menutupi bagian atas */}
+  <div className="absolute inset-0 h-full bg-gradient-to-b from-red-800 via-red-800/70 to-transparent z-10 pointer-events-none"></div>
+  
+  {/* Gradien bawah untuk menutupi hard crop di bagian bawah */}
+  <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-red-800 to-transparent z-10 pointer-events-none"></div>
+
+  <div
+    className="flex flex-col justify-center items-center h-full bg-no-repeat bg-cover bg-top"
+    style={{ backgroundImage: `url(${TimelineBg})`, backgroundSize: 'cover' }}
+  >
+    <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-center relative z-20">
+      Perjalanan
+    </h1>
+    <div className="relative z-20 w-full max-w-4xl">
+      <TimelineSections />
+    </div>
+  </div>
+</section>
+
+
+
 
       <section
         className="relative w-full h-screen bg-cover bg-center"
