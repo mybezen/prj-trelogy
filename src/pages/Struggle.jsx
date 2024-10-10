@@ -6,8 +6,14 @@ import MuseumScene from "../components/Museum";
 import TimelineSections from "../sections/TimelineSections";
 import TimelineBg from "../assets/timeline-bg.svg";
 import { FooterWithSocialLinks } from "../components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function StrugglePages() {
+  AOS.init({
+    duration: 700,
+    once: true,
+  });
   return (
     <div className="">
       <section

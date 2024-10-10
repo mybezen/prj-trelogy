@@ -4,8 +4,14 @@ import FeaturesIcon3 from "../assets/BlogImages/Features3.jpg";
 import FeaturesIcon4 from "../assets/BlogImages/Features4.jpg";
 import FeaturesIcon5 from "../assets/BlogImages/Features5.jpg";
 import FeaturesIcon6 from "../assets/BlogImages/Features6.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function BlogFeatures() {
+  AOS.init({
+    duration: 700,
+    once: true,
+  });
   return (
     <section id="features" className="py-12 text-black features">
       <div className="container mx-auto px-[4vw]">

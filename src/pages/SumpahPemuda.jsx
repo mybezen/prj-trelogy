@@ -7,6 +7,8 @@ import HeaderBg from "../assets/Heading.svg";
 import { FooterWithSocialLinks } from "../components/Footer";
 import BackgroundAudio from "../assets/audio/background.mp3"; // Import background audio
 import TextScene from "../components/TextThree";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function SumpahPemuda() {
   const backgroundAudioRef = useRef(null); // Referensi untuk background audio
@@ -16,6 +18,10 @@ function SumpahPemuda() {
     if (backgroundAudioRef.current) {
       backgroundAudioRef.current.play();
     }
+    AOS.init({
+      duration: 700,
+      once: true,
+    });
   }, []);
 
   // Fungsi untuk menjeda atau melanjutkan background audio

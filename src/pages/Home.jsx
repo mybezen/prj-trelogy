@@ -23,7 +23,7 @@ function Home() {
     }
     // Initialize AOS
     AOS.init({
-      duration: 500,
+      duration: 700,
       once: true,
     });
   }, []);
