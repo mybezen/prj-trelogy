@@ -24,7 +24,7 @@ const SumpahPemudaTabs = () => {
       image: JokoIcon,
       content: {
         description:
-          "Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.",
+          "Joko Marsaid adalah tokoh pergerakan nasional yang berperan dalam Perhimpunan Indonesia dan ikut serta dalam Kongres Pemuda II tahun 1928, yang menghasilkan Sumpah Pemuda. Bersama tokoh-tokoh lainnya, ia membantu memperkuat semangat persatuan bangsa Indonesia. Meski kurang dikenal, kontribusinya penting dalam perjuangan menuju kemerdekaan.",
         birthDate: "Tempat, Tanggal lahir : Malang, 29 Mei 1903",
         deathDate: "Wafat : 29 Mei 1969",
       },
@@ -34,7 +34,7 @@ const SumpahPemudaTabs = () => {
       image: YaminIcon,
       content: {
         description:
-          "Sastrawan, politisi, dan pencetus ide Pancasila, berperan penting dalam kemerdekaan Indonesia",
+          "Muhammad Yamin (1903–1962) adalah seorang sastrawan, sejarawan, dan politisi Indonesia. Lahir di Talawi, Sumatera Barat, ia berperan penting dalam pergerakan kebangsaan. Karyanya seperti 'Tanah Air' (1922) menjadi tonggak sastra nasional. Yamin aktif di Kongres Pemuda II tahun 1928, berperan dalam lahirnya Sumpah Pemuda, serta mengusulkan bahasa Indonesia sebagai bahasa persatuan. Sebagai anggota BPUPKI, ia turut menyusun dasar negara dan mengusulkan konsep Pancasila. Yamin juga pernah menjabat sebagai Menteri Kehakiman dan Menteri Pendidikan. Ia wafat pada 17 Oktober 1962, meninggalkan warisan penting dalam sejarah nasional.",
         birthDate: "Tempat, Tanggal lahir : Sawahlunto, 23 Agustus 1903",
         deathDate: "Wafat : Jakarta, 17 Oktober 1962",
       },
@@ -44,7 +44,7 @@ const SumpahPemudaTabs = () => {
       image: AmirIcon,
       content: {
         description:
-          "Mantan Perdana Menteri Indonesia, pemimpin politik sayap kiri, dan pejuang kemerdekaan.",
+          "Amir Sjarifuddin (lahir 27 April 1907 di Medan) adalah politisi dan aktivis yang berperan penting dalam perjuangan kemerdekaan Indonesia. Ia terlibat dalam Kongres Pemuda II sebagai bendahara dan aktif di organisasi seperti Jong Batak dan Partindo. Amir menjabat sebagai Menteri Pertahanan dan Perdana Menteri Indonesia, serta memimpin delegasi dalam perundingan Renville 1947. Namun, ia terlibat dalam Peristiwa Madiun 1948, yang berujung pada penangkapannya dan eksekusi pada 20 Desember 1948. Peranannya dalam politik Indonesia meninggalkan jejak bersejarah dalam perjuangan bangsa.",
         birthDate: "Tempat, Tanggal lahir : Medan, 27 April 1907",
         deathDate: "Wafat : Surakarta, 19 Desember 1948",
       },

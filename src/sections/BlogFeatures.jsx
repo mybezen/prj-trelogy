@@ -1,4 +1,3 @@
-
 import FeaturesIcon1 from "../assets/BlogImages/Features1.png";
 import FeaturesIcon2 from "../assets/BlogImages/Features2.jpg";
 import FeaturesIcon3 from "../assets/BlogImages/Features3.jpg";
@@ -8,7 +7,7 @@ import FeaturesIcon6 from "../assets/BlogImages/Features6.jpg";
 
 function BlogFeatures() {
   return (
-    <section id="features" className="py-12 features">
+    <section id="features" className="py-12 text-black features">
       <div className="container mx-auto px-[4vw]">
         {/* Features Item 1 */}
         <div
@@ -142,10 +141,16 @@ function BlogFeatures() {
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic">
-                Pentingnya Sumpah Pemuda bagi peserta didik dengan hambatan intelektual, menekankan bahwa meskipun mereka memiliki keterbatasan, semangat kebangsaan dan cinta tanah air bisa tetap diajarkan.
+                Pentingnya Sumpah Pemuda bagi peserta didik dengan hambatan
+                intelektual, menekankan bahwa meskipun mereka memiliki
+                keterbatasan, semangat kebangsaan dan cinta tanah air bisa tetap
+                diajarkan.
               </p>
               <p className="mb-4">
-                Dengan pendidikan yang inklusif, nilai-nilai yang terkandung dalam Sumpah Pemuda tetap bisa diserap oleh semua peserta didik, membantu mereka untuk lebih menghargai peran mereka sebagai bagian dari bangsa Indonesia
+                Dengan pendidikan yang inklusif, nilai-nilai yang terkandung
+                dalam Sumpah Pemuda tetap bisa diserap oleh semua peserta didik,
+                membantu mereka untuk lebih menghargai peran mereka sebagai
+                bagian dari bangsa Indonesia
               </p>
             </div>
             <p className="text-gray-500">
@@ -174,10 +179,16 @@ function BlogFeatures() {
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic ">
-                Tantangan yang dihadapi oleh remaja Indonesia di tengah kemerosotan moral akibat pengaruh globalisasi dan perubahan sosial. Penulis menekankan pentingnya pendidikan karakter dan nilai-nilai kebangsaan sebagai solusi untuk menghadapi degradasi moral ini.
+                Tantangan yang dihadapi oleh remaja Indonesia di tengah
+                kemerosotan moral akibat pengaruh globalisasi dan perubahan
+                sosial. Penulis menekankan pentingnya pendidikan karakter dan
+                nilai-nilai kebangsaan sebagai solusi untuk menghadapi degradasi
+                moral ini.
               </p>
               <p className="mb-4">
-                Solusi yang ditawarkan meliputi peran keluarga, sekolah, dan masyarakat dalam menanamkan nilai-nilai luhur kepada generasi muda
+                Solusi yang ditawarkan meliputi peran keluarga, sekolah, dan
+                masyarakat dalam menanamkan nilai-nilai luhur kepada generasi
+                muda
               </p>
             </div>
             <p className="text-gray-500">
@@ -200,18 +211,25 @@ function BlogFeatures() {
           </div>
           <div className="md:w-7/12">
             <h3 className="mb-4 text-3xl hover:text-[#8E2820] kenarose">
-              <a href="
-https://www.djkn.kemenkeu.go.id/artikel/baca/16690/Korupsi-Ancaman-Tersembunyi-yang-Merusak-Sendi-sendi-Kehidupan-Bangsa-dan-Negara.html">
+              <a
+                href="
+https://www.djkn.kemenkeu.go.id/artikel/baca/16690/Korupsi-Ancaman-Tersembunyi-yang-Merusak-Sendi-sendi-Kehidupan-Bangsa-dan-Negara.html"
+              >
                 Korupsi: Ancaman Tersembunyi yang Merusak Sendi-sendi Kehidupan
                 Bangsa dan Negara
               </a>
             </h3>
             <div className="border-l-4 border-[#8E2820] pl-3">
               <p className="mb-4 italic">
-                Dampak korupsi yang merusak sendi-sendi kehidupan bangsa dan negara. Korupsi dianggap sebagai ancaman besar yang dapat melemahkan fondasi negara, menghancurkan moralitas masyarakat, serta menghambat pembangunan dan kesejahteraan.
+                Dampak korupsi yang merusak sendi-sendi kehidupan bangsa dan
+                negara. Korupsi dianggap sebagai ancaman besar yang dapat
+                melemahkan fondasi negara, menghancurkan moralitas masyarakat,
+                serta menghambat pembangunan dan kesejahteraan.
               </p>
               <p className="mb-4">
-                Pemerintah diharapkan dapat lebih tegas dalam menangani kasus korupsi dengan menegakkan hukum secara adil, guna membangun Indonesia yang bersih dan bebas dari korupsi
+                Pemerintah diharapkan dapat lebih tegas dalam menangani kasus
+                korupsi dengan menegakkan hukum secara adil, guna membangun
+                Indonesia yang bersih dan bebas dari korupsi
               </p>
             </div>
             <p className="text-gray-500">

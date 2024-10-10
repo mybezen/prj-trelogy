@@ -5,7 +5,7 @@ import CenteredNavbar from "../components/Navbar";
 
 function ContactPage() {
   return (
-    <div>
+    <div className="bg-white">
       <header>
         <CenteredNavbar />
       </header>
