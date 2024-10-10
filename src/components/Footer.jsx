@@ -93,8 +93,8 @@ export function FooterWithSocialLinks() {
             className="mb-4 text-center text-black poppins-regular md:mb-0"
           >
             &copy; {currentYear}{" "}
-            <a href="https://material-tailwind.com/">Peintagons</a>. All Rights
-            Reserved.
+            <a href="https://instagram.com/peintagons">Peintagons</a>. Hak Cipta
+            Dilindungi Undang-Undang
           </Typography>
         </div>
       </div>

@@ -42,7 +42,9 @@ function ImageSection() {
               alt="Pablo Neruda 1"
               className="object-cover w-full h-full bg-top"
             />
-            <p className="legend">Halaman Pengikraran</p>
+            <a href="/ikrar" className="legend">
+              Halaman Pengikraran
+            </a>
           </div>
           <div className="w-full h-[46.25vh]">
             <img
@@ -50,7 +52,9 @@ function ImageSection() {
               alt="Pablo Neruda 2"
               className="object-cover w-full h-full bg-top"
             />
-            <p className="legend -mt-52">Halaman Blog</p>
+            <a href="/blog" className="legend -mt-52">
+              Halaman Blog
+            </a>
           </div>
           <div className="w-full h-[46.25vh]">
             <img
@@ -58,7 +62,9 @@ function ImageSection() {
               alt="Pablo Neruda 3"
               className="object-cover w-full h-full bg-center"
             />
-            <p className="legend">Diplomat & Poet</p>
+            <a href="/strug" className="legend">
+              Diplomat & Poet
+            </a>
           </div>
         </Carousel>
       </div>
