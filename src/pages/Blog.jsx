@@ -1,6 +1,7 @@
-import CenteredNavbar from '../components/Navbar';
-import BlogFeatures from '../sections/BlogFeatures';
-import HeadingBG from '../assets/BlogImages/HeadingBG.png';
+import CenteredNavbar from "../components/Navbar";
+import BlogFeatures from "../sections/BlogFeatures";
+import HeadingBG from "../assets/BlogImages/HeadingBG.png";
+import { FooterWithSocialLinks } from "../components/Footer";
 
 function BlogPage() {
   return (
@@ -15,6 +16,9 @@ function BlogPage() {
       {/* Section Features */}
       <div className="">
         <BlogFeatures />
+      </div>
+      <div>
+        <FooterWithSocialLinks />
       </div>
     </div>
   );
