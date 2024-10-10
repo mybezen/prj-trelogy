@@ -1,52 +1,52 @@
-import { useState } from 'react';
-import SoegondoIcon from '../assets/TabsImages/soegondo.png';
-import JokoIcon from '../assets/TabsImages/Djoko.jpg';
-import YaminIcon from '../assets/TabsImages/Yamin.jpg';
-import AmirIcon from '../assets/TabsImages/Amir.jpg';
+import { useState } from "react";
+import SoegondoIcon from "../assets/TabsImages/soegondo.png";
+import JokoIcon from "../assets/TabsImages/Djoko.jpg";
+import YaminIcon from "../assets/TabsImages/Yamin.jpg";
+import AmirIcon from "../assets/TabsImages/Amir.jpg";
 
 const SumpahPemudaTabs = () => {
-  const [activeTab, setActiveTab] = useState('Soegondo .D');
+  const [activeTab, setActiveTab] = useState("Soegondo .D");
   const [fadeTransition, setFadeTransition] = useState(false); // State for animation
 
   const tabs = [
     {
-      name: 'Soegondo .D',
+      name: "Soegondo .D",
       image: SoegondoIcon,
       content: {
         description:
-          'Tokoh penting dalam sejarah pergerakan nasional Indonesia. Ia dikenal sebagai ketua Kongres Pemuda I yang melahirkan Sumpah Pemuda pada 28 Oktober 1928.',
-        birthDate: 'Tempat, Tanggal Lahir: 22 Februari 1905, Tuban',
-        deathDate: 'Wafat: April 1978, Yogyakarta',
+          "Tokoh penting dalam sejarah pergerakan nasional Indonesia. Ia dikenal sebagai ketua Kongres Pemuda I yang melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
+        birthDate: "Tempat, Tanggal Lahir: 22 Februari 1905, Tuban",
+        deathDate: "Wafat: April 1978, Yogyakarta",
       },
     },
     {
-      name: 'R. M. Joko .M',
+      name: "R. M. Joko .M",
       image: JokoIcon,
       content: {
         description:
-          'Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.',
-        birthDate: 'Tempat tanggal lahir : Malang, 29 Mei 1903',
-        deathDate: '29 Mei 1969',
+          "Pahlawan nasional yang berjuang melawan penjajahan Belanda, aktif di bidang politik dan pendidikan.",
+        birthDate: "Tempat tanggal lahir : Malang, 29 Mei 1903",
+        deathDate: "29 Mei 1969",
       },
     },
     {
-      name: 'M. Yamin',
+      name: "M. Yamin",
       image: YaminIcon,
       content: {
         description:
-          'Sastrawan, politisi, dan pencetus ide Pancasila, berperan penting dalam kemerdekaan Indonesia',
-        birthDate: 'Birth Date',
-        deathDate: 'Death Date',
+          "Sastrawan, politisi, dan pencetus ide Pancasila, berperan penting dalam kemerdekaan Indonesia",
+        birthDate: "Birth Date",
+        deathDate: "Death Date",
       },
     },
     {
-      name: 'Amir .S',
+      name: "Amir .S",
       image: AmirIcon,
       content: {
         description:
-          'Mantan Perdana Menteri Indonesia, pemimpin politik sayap kiri, dan pejuang kemerdekaan.',
-        birthDate: 'Birth Date',
-        deathDate: 'Death Date',
+          "Mantan Perdana Menteri Indonesia, pemimpin politik sayap kiri, dan pejuang kemerdekaan.",
+        birthDate: "Birth Date",
+        deathDate: "Death Date",
       },
     },
   ];
@@ -63,15 +63,15 @@ const SumpahPemudaTabs = () => {
 
   return (
     <div className="w-full md:w-8/12 mx-auto p-4">
-      <div className="bg-[#8E2820] rounded-lg md:rounded-3xl p-2 md:p-4 mb-4 flex justify-center gap-2 md:gap-4 w-full md:w-max mx-auto">
+      <div className="bg-[#8E2820] rounded-lg md:rounded-3xl p-2 md:p-4 md:px-[13rem] mb-4 flex justify-center gap-2 md:gap-4 w-full mx-auto">
         {tabs.map((tab) => (
           <button
             key={tab.name}
             onClick={() => handleTabClick(tab.name)}
-            className={`px-3 py-1.5 text-[15px] md:text-base md:px-4 md:py-2 md:rounded-2xl rounded-md flex-1 kenarose ${
+            className={`inline-block px-3 py-1.5 md:text-[20px] text-[15px] md:text-base md:px-4 md:py-3 md:rounded-2xl flex-1 rounded-md kenarose ${
               activeTab === tab.name
-                ? 'bg-[#C9A194] text-[#8E2820]'
-                : 'bg-[#F4D9D0] text-[#8E2820]'
+                ? "bg-[#C9A194] text-[#8E2820]"
+                : "bg-[#F4D9D0] text-[#8E2820]"
             }`}
           >
             {tab.name}
@@ -79,10 +79,26 @@ const SumpahPemudaTabs = () => {
         ))}
       </div>
 
+      {/* <div className="bg-[#8E2820] rounded-lg md:rounded-3xl p-2 md:p-4 mb-4 flex justify-center gap-2 md:gap-4 w-full mx-auto">
+        {tabs.map((tab) => (
+          <button
+            key={tab.name}
+            onClick={() => handleTabClick(tab.name)}
+            className={`inline-block w-full md:w-auto px-8 py-1.5 md:px-12 md:py-2 text-[15px] md:text-[20px] rounded-md md:rounded-2xl kenarose ${
+              activeTab === tab.name
+                ? "bg-[#C9A194] text-[#8E2820]"
+                : "bg-[#F4D9D0] text-[#8E2820]"
+            }`}
+          >
+            {tab.name}
+          </button>
+        ))}
+      </div> */}
+
       {activeTabData ? (
         <div
           className={`flex flex-col md:flex-row border rounded-lg p-4 transition-opacity transform border-none my-10 ${
-            fadeTransition ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+            fadeTransition ? "opacity-0 scale-95" : "opacity-100 scale-100"
           } duration-300 ease-in-out`}
         >
           <div

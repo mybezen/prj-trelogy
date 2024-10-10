@@ -1,8 +1,9 @@
-import HeaderBg from '../assets/Heading.svg'; // Import background image for second section
-import CenteredNavbar from '../components/Navbar';
-import StrugBg from '../assets/strug-bg.jpg';
-import StrugCarousel from '../sections/StrugCarousel';
-import MuseumScene from '../components/Museum';
+import HeaderBg from "../assets/Heading.svg"; // Import background image for second section
+import CenteredNavbar from "../components/Navbar";
+import StrugBg from "../assets/strug-bg.jpg";
+import StrugCarousel from "../sections/StrugCarousel";
+import MuseumScene from "../components/Museum";
+import TimelineSections from "../sections/TimelineSections";
 
 function StrugglePages() {
   return (
@@ -29,6 +30,13 @@ function StrugglePages() {
         </div>
       </section>
 
+      <section className="w-full min-h-screen bg-red-800 pt-20 text-white px-20">
+        <h1 className="kenarose mb-6 text-3xl lg:text-5xl text-center">
+          Perjalanan
+        </h1>
+        <TimelineSections />
+      </section>
+
       <section
         className="relative w-full h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${HeaderBg})` }}
@@ -53,7 +61,7 @@ function StrugglePages() {
             </div>
           </div>
           <div className="w-5/12 h-64 mr-14">
-          <MuseumScene/>
+            <MuseumScene />
           </div>
         </div>
       </section>

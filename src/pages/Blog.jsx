@@ -13,8 +13,7 @@ function BlogPage() {
         <div className="absolute md:h-[73vh] h-56 inset-0 bg-gradient-to-t from-white to-transparent"></div>
         <CenteredNavbar />
       </header>
-      {/* Section Features */}
-      <div className="">
+      <div className="bg-white -mt-1">
         <BlogFeatures />
       </div>
       <div>
